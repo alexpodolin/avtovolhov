@@ -6,6 +6,7 @@ html, body {
 }	
 a {
 	color: #000000;
+	text-decoration: none;
 }
 button:hover,
 a:hover {
@@ -130,7 +131,7 @@ a:hover {
 .search__basket {
 	width: 50px;
     height: 45px;
-    background: url(../img/11.png) no-repeat;
+    background: url(../img/basket_empty.png) no-repeat;
     background-size: contain;
     margin: 0 0 0 -2.5%;
     position: relative;
@@ -151,7 +152,6 @@ a:hover {
 	border: 2px solid #000000;
 	border-radius: 10px;
 	text-transform: uppercase;
-	text-decoration: none;
 	text-align: center;
 	/*padding: 0 0 0 13%;*/
 	display: flex;
@@ -221,7 +221,6 @@ a:hover {
 	flex-wrap: nowrap;
 }*/
 .main__menu-link {
-	text-decoration: none;
 	text-transform: capitalize;
 	font-size: 32px;
 	color: #FDBD03;
@@ -245,14 +244,12 @@ a:hover {
 .main__menu-sales {
 	width: 20%;
 	display: flex;
-	flex-direction: column;
 }
-
 .main__sales {
 	/*width: 100%;*/
 	padding: 0 2% 0 2%;
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 }
 .main__sales_stock {
 	width: 22%;
@@ -264,14 +261,237 @@ a:hover {
     font-size: 24px;
     color: #FFFFFF;
     text-align: center;
-    background-color: red;
+    background-color: #C92F2F;
     border-radius: 10px;
     padding: 3% 0;
 }
-
-
-
-
+.main__sales-product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 405px;
+	height: 260px;
+	margin: 0 0 5% 0;
+}
+.main__sales-product:before {
+	content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: url(../img/sale.png) no-repeat;
+}
+.main__sales-product-img {
+	width: 405px;
+    height: 260px;
+    box-sizing: border-box;
+    border: 5px solid #C92F2F;
+    border-radius: 10px;
+}
+.main__sales-product strong {
+	content: "";
+    position: absolute;
+    width: 115px;
+    height: 35px;
+	top: 15%;
+    right: 5%;
+    background-color: #C92F2F;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2% 0 0 0;
+}
+.main__sales-product:after {
+	content: "";
+	position: absolute;
+    width: 394px;
+    height: 60px;
+    top: 65%;
+    left: 1.5%;
+	background: url(../img/stock_line.png) no-repeat;
+	background-size: contain;
+	z-index: 1
+} 
+.main__sales-product-link {
+	position: absolute;
+    top: 70.5%;
+    left: 23%;
+    z-index: 100;
+}
+.main__sales-product-link:hover {
+	color: #FFFFFF;
+	opacity: 1;
+}
+.main__sales-jerrycan{
+	content: "";
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    top: 67%;
+    left: 9%;
+    z-index: 100;
+}
+.main__sales-gear{
+	content: "";
+    position: absolute;
+    width: 52px;
+    height: 44px;
+    top: 67%;
+    left: 6.5%;
+    z-index: 100;
+}
+.main__sales-wheel {
+	content: "";
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    top: 67%;
+    left: 7.5%;
+    z-index: 100;
+}
+.main__sections {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 4%;
+}
+.main__sections p {
+	text-transform: uppercase;
+    font-size: 24px;
+    color: #FDBD03;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 0.9% 0;
+    width: 100%;
+}
+.main__sections-inner {
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main__sections-inner-prod  {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 405px;
+	height: 260px;
+	margin: 0 0 1.4% 0;
+}
+.main__sections-inner-img {
+	width: 405px;
+    height: 260px;
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+.main__sections-inner-prod:before{
+	content: "";
+	position: absolute;
+    width: 394px;
+    height: 60px;
+    top: 65%;
+    left: 1.5%;
+	background: url(../img/stock_line.png) no-repeat;
+	background-size: contain;
+	z-index: 1
+} 
+.main__sections-inner-link {
+	text-transform: uppercase;
+	font-size: 24px;
+    position: absolute;
+    top: 71%;
+    left: 27%;
+    z-index: 100;
+}
+.main__sections-inner-link:hover { 
+	color: #FFFFFF;
+	opacity: 1;
+}
+.main__sections-inner-gear {
+	content: "";
+    position: absolute;
+    width: 52px;
+    height: 44px;
+    top: 67%;
+    left: 6.5%;
+    z-index: 100;
+}
+.main__sections-inner-jerrycan {
+	content: "";
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    top: 68%;
+    left: 9%;
+    z-index: 100;
+}
+.main__sections-inner-wheels {
+	content: "";
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    top: 67%;
+    left: 7.5%;
+    z-index: 100;
+}
+.main__sections-inner-accessories {
+	content: "";
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    top: 67%;
+    left: 7.3%;
+    z-index: 100;
+}
+.main__sections-inner-instruments {
+	content: "";
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    top: 68%;
+    left: 7.5%;
+    z-index: 100;
+}
+.main__sections-inner-accumulators {
+	content: "";
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    top: 68%;
+    left: 7.5%;
+    z-index: 100;
+}
+.main__sections-inner-autoglass {
+	content: "";
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: 70%;
+    left: 7.5%;
+    z-index: 100;
+}
+.main__sections-inner-parts {
+	content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 67%;
+    left: 7.5%;
+    z-index: 100;
+}
+.main__sections-inner-fastening {
+	content: "";
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: 68%;
+    left: 6%;
+    z-index: 100;
+}
 .footer {
 	width: 100%;
 	display: flex;
