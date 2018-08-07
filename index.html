@@ -11,7 +11,7 @@
 	<meta name="author" content="Александр Подолин, alex.podolin@gmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 	<style media="all,print,screen"></style>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css" media="all">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mobile.css" media="all">
@@ -23,7 +23,7 @@
 <body>
 <div id="wrapper">
 
-<div class="header">
+<header class="header">
 	<div class="header__leftlogo">
 		<span class="header__left_tagline">ЛенОблАвто</span>
 		<span class="header__left_la-logo"></span>
@@ -32,47 +32,61 @@
 	<div class="header__main">
 		<span class="header__main_tagline">Автозапчасти</span>
 		<div class="form__wrapper">
-			<form class="search">
+			<form class="search" id="search">
 				<fieldset>
 					<legend></legend>
 					<label for="search__by" class="search__label">
-						<input id="search__by" name="Поиск" placeholder="Номер, название или VIN" type="text">
-						<button type="submit" form="search" class="search__icon-search"></button>
+						<input id="search__by" name="Поиск" placeholder="Номер, название или VIN" type="text">						
 					</label>
+					<button type="submit" form="search" class="search__icon-search"></button>
 				</fieldset>
 			</form>
-			<div class="search__eye"></div>
+			<button type="button" class="last__items"></button>
 			<div class="search__basket"></div>
-			<a class="search__login" href="/login"></a>
+			<a href="login" class="search__login"><span>Вход</span></a>
 		</div>
 	</div>
 
 	<div class="header__rightlogo">
 		<span class="header__right_tagline">АвтоВолхов</span>
-		<span class="header__right_insta"></span>
+		<a href="#" class="header__right_insta"></a>
 	</div>	
-</div>
+</header>
 
-<div class="main__inner">
-	<div class="main">
-		<nav class="main__menu">
-			<a href="/main" class="main__link-link">Главная</a>
-			<a href="/catalogs" class="main__link-link">Каталоги</a>
-			<a href="/brends" class="main__link-link">Бренды</a>
-			<a href="/to" class="main__link-link">Запчасти для ТО</a>
-			<a href="/help" class="main__link-link">Помощь</a>
-			<a href="/contacts" class="main__link-link">Контакты</a>
-			<a href="/forum" class="main__link-link">Форум</a>
-		</nav>
+<main class="main__inner">
+	<nav class="main__menu">
+		<ul class="main__menu-list">
+			<li class="main__menu-item"><a href="main" class="main__menu-link">Главная</a></li>
+			<li class="main__menu-item"><a href="catalogs" class="main__menu-link">Каталоги</a></li>
+			<li class="main__menu-item"><a href="brends" class="main__menu-link">Бренды</a></li>
+			<li class="main__menu-item"><a href="to" class="main__menu-link">Запчасти для ТО</a></li>
+			<li class="main__menu-item"><a href="help" class="main__menu-link">Помощь</a></li>
+			<li class="main__menu-item"><a href="contacts" class="main__menu-link">Контакты</a></li>
+			<li class="main__menu-item"><a href="forum" class="main__menu-link">Форум</a></li>
+		</ul>
+	</nav>
+
+	<div class="main__sales">
+		<div class="main__sales_stock">
+			<p>Акции и распродажи</p>
+
+			<div class="main__sales-product">
+				<ins>1900 руб.</ins>
+				<a href="#" class="main__sales-product-link">Shell Helix Ultra 5W-30 4 литра</a>
+			</div>
+
+		</div>
 	</div>
-</div>
 
-<div class="footer">
+		
+</main>
+
+<footer class="footer">
 	<div class="footer__copyright">
 		<span>Работаем для наших клиентов с 1997 года</span>
 		<span><small> &copy; Любое копирование запрещено</small></span>	
 	</div>
-</div>
+</footer>
 
 </div>	
 </body>
