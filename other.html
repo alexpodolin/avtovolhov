@@ -23,15 +23,18 @@
 <body>
 <div id="wrapper">
 
-<header class="header">
+<header class="header header__hide">
 	<div class="header__leftlogo">
 		<span class="header__left_tagline">ЛенОблАвто</span>
 		<span class="header__left_la-logo"></span>
 	</div>
+
+	<div class="header__menu-btn"></div>
+
 	<div class="header__main">
 		<span class="header__main_tagline">Автозапчасти</span>
 		<div class="form__wrapper">
-			<form class="search" id="search">
+			<form class="search " id="search">
 				<fieldset>
 					<legend></legend>
 					<label for="search__by" class="search__label">
@@ -50,6 +53,30 @@
 		<span class="header__right_tagline">АвтоВолхов</span>
 		<a href="#" class="header__right_insta"></a>
 	</div>	
+</header>
+
+<header class="header__mini header__mini-show">
+	<div class="header__mini-leftlogo">
+		<span class="header__mini-logo"></span>
+		<button type="button" class="header__mini-btn"></button>
+	</div>
+
+	<div class="header__main header__main-mini">
+		<div class="form__wrapper form__wrapper-mini">
+			<form class="search search_mini" id="search">
+				<fieldset>
+					<legend></legend>
+					<label for="search__by" class="search__label">
+						<input id="search__by" name="Поиск" placeholder="Номер, название или VIN" type="text">						
+					</label>
+					<button type="submit" form="search" class="search__icon-search search__icon-search-mini"></button>
+				</fieldset>
+			</form>
+			<button type="button" class="last__items last__items-mini"></button>
+			<div class="search__basket search__basket-mini"></div>
+			<a href="login" class="search__logout"><span>Выход</span></a>
+		</div>
+	</div>
 </header>
 
 <main class="main__inner">
