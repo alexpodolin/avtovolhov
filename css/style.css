@@ -231,7 +231,8 @@ a:hover {
 	text-transform: capitalize;
 	font-size: 32px;
 	color: #FDBD03;
-	background-color: #000000;
+	/*background-color: #000000;*/
+	background-color: #303030;
 	border-radius: 10px;
 /*	display: flex;
 	justify-content: center;
@@ -375,7 +376,8 @@ a:hover {
     font-size: 24px;
     color: #FDBD03;
     text-align: center;
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: #303030;
     border-radius: 10px;
     padding: 0.9% 0;
     width: 100%;
@@ -609,6 +611,7 @@ a:hover {
     height: 80px;	
     border: none;
     margin: 0 0 0 2%;
+    position: relative;
 }
 .header__mini-btn:hover {
 	background: transparent url("../img/btn_menu_hover.png")  ;
@@ -620,6 +623,57 @@ a:hover {
     opacity: 1;
     cursor: pointer;
 }
+.header__mini-btn:hover > .header__mini-nav {
+	display: flex;
+	flex-direction: column;
+	z-index: 200;
+	cursor: default;
+}
+.header__mini-nav {
+	display: none;
+	position: absolute;
+	background-color: #303030;
+	width: 364%;
+	top: 100%;
+	left: -233%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.header__mini-ul {
+	margin: 0;
+	padding: 0;
+}
+.header__mini-li {
+	list-style-type: none;
+	/*list-style-image: url("../img/menu_marker.png");*/
+	display: flex;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+}
+.header__mini-link {
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 24px;
+	padding: 3% 0 3% 13%;
+	display: flex;
+	position: relative;
+}
+.header__mini-link:before {
+	content: "";
+	position: absolute;
+    width: 10px;
+    height: 30px;
+    top: 10%;
+    left: 3%;
+    background: url("../img/menu_marker.png") no-repeat;
+    background-size: contain;
+}
+.header__mini-link:hover {
+	/*background-color: #404040;*/
+	color: #FDBD03;
+	opacity: 1;
+}
 .header__main-mini {
 	width: 84%;
 }
@@ -630,7 +684,7 @@ a:hover {
 }
 .search_mini {
 	width: 73%;
-	margin: 0.5% 0 0 0;
+	margin: 0.5% 0 0 1.4%;
 }
 .search__icon-search-mini {
 	top: 22%;
@@ -644,7 +698,7 @@ a:hover {
 .search__basket-mini {
 	width: 65px;
     height: 60px;
-    background: url(../img/basket_empty.png) no-repeat;
+    background: url("../img/basket_empty.png") no-repeat;
     background-size: contain;
     margin: -0.2% 0 0 1%;
 }
@@ -671,6 +725,6 @@ a:hover {
     left: 3%;
     width: 30px;
     height: 35px;
-    background: url(../img/login.png) no-repeat;
+    background: url("../img/login.png") no-repeat;
     background-size: contain;
 }
