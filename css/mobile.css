@@ -75,9 +75,9 @@
 .header__mini-link { font-size: 20px; }
 .header__mini-link:before { width: 6px; height: 25px; left: 8%; }
 .header__mini-link:hover:before { width: 6px; height: 25px; left: 8%; }
-.search_mini { margin: 0.6% 0 0 0%; }
-.search_mini input { padding: 1% 0 1% 3%; }
-.search__icon-search { top: 6px; left: 99%; }
+.search__mini { margin: 0.6% 0 0 0%; }
+.search__mini input { padding: 1% 0 1% 3%; }
+/*.search__icon-search { top: 6px; left: 99%; }*/
 .last__items-mini { width: 40px; height: 40px; }
 .search__basket-mini { width: 60px; height: 55px; }
 .search__logout { height: 35px; }
@@ -87,8 +87,62 @@
 .search__icon-search { top: 4px; left: 97%; }
 }
 @media only screen  and (max-width : 1399px) {
+.header__left_tagline { margin: 7% 0 0 10%; }
+.header__left_la-logo { width: 110px; height: 65px; margin: -2% 0 0 0; background-size: cover; }
+.header__main { width: 61%; }
+.header__rightlogo { width: fit-content; }
+.header__right_tagline { margin: 7% 0 0 0; }
+.header__right_insta { width: 75px; height: 65px; }
+.search { width: 67%; margin: 4% 0 0 3%; }
+.search__icon-search { left: 96%; }
+.last__items { margin: 3.84% 0 0 4%; }
+.search__basket { margin: 3.1% 0 0 1%; }
+.search__login { margin: 4.1% 0 0 1%; }
+.main__menu-link { padding: 5px 30px 10px 30px; }
+.main__sales_stock { width: 23%; }
+.main__sales-product { width: 275px; height: 180px; margin: 0 0 7% 0; }
+.main__sales-product:before { width: 80px; height: 80px; background-size: cover; }
+.main__sales-product-img {  width: 275px; height: 180px; }
+.main__sales-product strong { width: 75px; height: 25px; padding: 0% 0 0 0; }
+.main__sales-product:after { width: 96%; left: 1.8%; }
+.main__sales-product-link { top: 69%; font-size: 11px; }
+.main__sales-jerrycan { width: 20px; height: 25px; }
+.main__sales-gear { width: 36px; height: 29px; top: 67.5%; }
+.main__sales-wheel { width: 30px; height: 30px; top: 67%; }
+.main__sections { margin: 0 0 0 4.5%; }
+.main__sections-inner-prod { width: 280px; height: 180px; margin: 0 0 2.4% 0; }
+.main__sections-inner-img { width: 280px; height: 180px; }
+.main__sections-inner-prod:before { width: 268px; left: 2.3%; }
+.main__sections-inner-link { top: 69%; }
+.main__sections-inner-gear { width: 37px; height: 29px; }
+.main__sections-inner-jerrycan { width: 20px; height: 30px; top: 67.5%; left: 10%; }
+.main__sections-inner-wheels { width: 30px; height: 31px; }
+.main__sections-inner-accessories { width: 30px; height: 25px; top: 68%; left: 8%; }
+.main__sections-inner-instruments { width: 30px; height: 25px; top: 68%; left: 8%; }
+.main__sections-inner-accumulators { width: 30px; height: 25px; top: 68.5%; left: 8%; }
+.main__sections-inner-autoglass { width: 35px; height: 25px; top: 71%; left: 8%; }
+.main__sections-inner-parts { width: 25px; height: 25px; top: 69%; left: 9%; }
+.main__sections-inner-fastening { width: 35px; height: 25px; }
 
+.header__mini { height: 60px; }
+.header__mini-logo { width: 80px; height: 45px; background-size: contain; }
+.header__mini-btn { width: 70px; height: 70px; }
+.header__mini-btn:hover { width: 70px; height: 70px; }
+.header__main-mini { width: 84%; }
+.header__mini-nav { width: 252%; top: 93%; left: -152%; }
+.header__mini-link { font-size: 16px; }
+.header__mini-link:before { width: 5px; height: 20px; }
+.header__mini-link:hover:before { width: 5px; height: 20px; }
+.search__mini {  width: 90%;  margin: 1% 0 0 3%; }
+.search__icon-search-mini { top: 5px; left: 98%; }
+.last__items-mini { width: 35px; height: 35px; border-radius: 13px; padding: 1%; margin: 0.84% 0 0 4%; }
+.search__basket-mini { margin: 1.4% 0 0 1%; }
+.search__basket-mini.search__basket:before { top: 4%; }
+.search__logout { height: 30px; margin: 0.8% 0 0 2%; border-radius: 13px; }
+.search__logout:before { width: 20px; height: 25px; top: 10%; left: 4%; }
 }
+.search__logout span { padding: 0 0 0 10%; }
+
 @media only screen  and (max-width : 1279px) {
 
 }
