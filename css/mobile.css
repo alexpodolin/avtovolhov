@@ -7,7 +7,7 @@
 .header__right_tagline { font-size: 42px; }
 .search input { padding: 1.25% 0 1.25% 3%; }
 /*.search__icon-search { top: 1%; left: 96%; width: 46px; height: 46px; }*/
-.search__basket:before { top: 7%; }
+.search__basket:before { top: 11%; left:23%; }
 .search__login:before { width: 41px; height: 41px; }
 
 .main__menu-link { padding: 5px 35px 10px 35px; }
@@ -40,8 +40,9 @@
 .search__icon-search-mini { top: 4%; left: 97%; width: 49px; height: 49px; background-size: contain; }
 .last__items-mini { width: 70px; height: 51px; }
 .last__items-mini:before { top: 26%; left: 9%; }
-.search__logout:before { top: 0%; right: 31%; }
-.search__logout span { position: absolute; left: 35%; }
+.search__logout { margin: 0.6% -1.5% 0 1%; }
+.search__logout:before { top: 0%; right: 33%; margin: 0.6% -1.5% 0 1%; }
+.search__logout span { position: absolute; left: 36%; }
 }
 @media only screen  and (max-width : 1599px) {
 .header { height: 150px; }
