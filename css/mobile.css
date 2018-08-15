@@ -1,12 +1,12 @@
 @media only screen  and (max-width : 1679px) {
 .header__leftlogo { width: 20%; }	
-.header__main { width: 61%; }
+/*.header__main { width: 61%; }*/
 .header__rightlogo { width: 19%; }
 .header__left_tagline { font-size: 42px; }
 .header__main_tagline { font-size: 66px; }
 .header__right_tagline { font-size: 42px; }
 .search input { padding: 1.25% 0 1.25% 3%; }
-.search__icon-search { top: 1%; left: 96%; width: 46px; height: 46px; }
+/*.search__icon-search { top: 1%; left: 96%; width: 46px; height: 46px; }*/
 .search__basket:before { top: 7%; }
 .search__login:before { width: 41px; height: 41px; }
 
@@ -34,8 +34,14 @@
 .main__sections-inner-autoglass { width: 45px; height: 35px; }
 .main__sections-inner-parts { width: 35px; height: 35px; }
 .main__sections-inner-fastening { width: 45px; height: 35px; }
-.header__mini-nav { width: 290.5%; left: -191%; }
-.header__mini-link { font-size: 22px;  }
+.header__mini-nav { width: 290.5%; left: -160%; }
+.header__mini-link { font-size: 22px; }
+.search__mini input { padding: 1% 0 1% 2%; }
+.search__icon-search-mini { top: 4%; left: 97%; width: 49px; height: 49px; background-size: contain; }
+.last__items-mini { width: 70px; height: 51px; }
+.last__items-mini:before { top: 26%; left: 9%; }
+.search__logout:before { top: 0%; right: 31%; }
+.search__logout span { position: absolute; left: 35%; }
 }
 @media only screen  and (max-width : 1599px) {
 .header { height: 150px; }
