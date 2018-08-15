@@ -1,22 +1,29 @@
-@media only screen  and (max-width : 1679px) {	
+@media only screen  and (max-width : 1679px) {
+.header__leftlogo { width: 20%; }	
+.header__main { width: 61%; }
+.header__rightlogo { width: 19%; }
 .header__left_tagline { font-size: 42px; }
 .header__main_tagline { font-size: 66px; }
-.search input { padding: 1.25% 0 1.25% 3%; }
-.search__icon-search { top: 5px; left: 97%; }
-.search__basket:before { top: 7%; }
 .header__right_tagline { font-size: 42px; }
-.main__menu-link { padding: 5px 30px 10px 30px; }
-.main__sales-product { width: 350px; height: 230px; }
+.search input { padding: 1.25% 0 1.25% 3%; }
+.search__icon-search { top: 1%; left: 96%; width: 46px; height: 46px; }
+.search__basket:before { top: 7%; }
+.search__login:before { width: 41px; height: 41px; }
+
+.main__menu-link { padding: 5px 35px 10px 35px; }
+.main__sales-product { width: 350px; height: 230px; margin: 7% 0 0 0;}
 .main__sales-product-img { width: 350px; height: 230px; }
 .main__sales-product strong { right: 8%; }
-.main__sales-product-link { left: 21%; font-size: 14px; }
+.main__sales-product-link { top: 70%; left: 21%; font-size: 14px; }
 .main__sales-product:after {  width: 339px; left: 1.7%; }
-.main__sales-jerrycan { width: 25px; height: 35px; }
+.main__sales-jerrycan { width: 25px; height: 35px; top: 68%; left: 10%; }
 .main__sales-gear { width: 46px; height: 39px; top: 67%; left: 6.3%; }
 .main__sales-wheel { width: 40px; height: 41px; top: 66.5%; left: 7%; }
-.main__sections-inner-prod { width: 360px; height: 230px; }
+.main__sections p { margin: 3% 0 0 0; padding: 1.2% 0; }
+.main__sections-inner {  margin: 2% 0 0 0; }
+.main__sections-inner-prod { width: 360px; height: 230px; margin: 0 0 2% 0; }
 .main__sections-inner-img { width: 360px; height: 230px; }
-.main__sections-inner-link { top: 71.5%; font-size: 22px; }
+.main__sections-inner-link { top: 71%; left: 27%; font-size: 22px; }
 .main__sections-inner-prod:before { width: 349px; left: 1.7%; }
 .main__sections-inner-gear { width: 47px; height: 39px; top: 67.5%; }
 .main__sections-inner-jerrycan { top: 67%; }
