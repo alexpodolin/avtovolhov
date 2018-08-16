@@ -209,7 +209,7 @@ a:hover {
     /*top: 1px;
     left: 5px;*/
     top: -2%;
-    left: 3%;
+    left: 4%;
     /*width: 25px;
     height: 30px;*/
     width: 40px;
@@ -653,14 +653,17 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: nowrap;
 	/*padding: 0.5% 1% 0.5% 1%;*/
 	padding: 1%;
 	font-size: 24px;
 	font-weight: lighter;
 }
+.footer__copyright span { display: flex; }
 .footer__copyright span:first-child {
 	text-transform: uppercase;
 	padding: 0 1% 0 0;
+	width: 30.6%;
 }
 /*==================================================================================*/
 /*other page*/
@@ -746,6 +749,7 @@ a:hover {
 	margin: 0;
 	padding: 0;
 }
+.header__mini-li:last-child {  margin: 0 0 2% 0; }
 .header__mini-link {
 	/*width: 100%;*/
 	color: #FFFFFF;
