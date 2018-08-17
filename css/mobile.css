@@ -5,6 +5,7 @@
 .header__main_tagline { font-size: 66px; margin: 4% 23% 6% 23%; }
 .header__right_tagline { font-size: 42px; }
 .search input { padding: 1.25% 0 1.25% 3%; }
+.search__icon-search { top: 2%; }
 .search__basket:before { top: 11%; left:23%; }
 .search__login:before { width: 41px; height: 41px; }
 .main__menu-link { padding: 5px 35px 10px 35px; }
@@ -110,7 +111,7 @@
 .header__main-mini { width: 85%; }
 .search__mini { width: 78%; margin: 0.6% 0 0 -1.5%; }
 .search__mini input { padding: 0.7% 0 0.7% 1%; }
-.search__icon-search { left: 97.5%; }
+.search__icon-search-mini { left: 97.5%; }
 .last__items-mini { width: 42px; height: 38px; margin: 0.6% 0 0 2.5%; }
 .last__items:before { top: 27%; left: 15%; }
 .search__basket-mini { width: 51px; height: 45px; margin: 0 0 0 0.5%; }
@@ -120,7 +121,27 @@
 }
 
 @media only screen  and (max-width : 1439px) {
-.search__icon-search { top: 4px; left: 97%; }
+.search__icon-search { top: 1%; left: 96%; }
+.last__items:before { top: 22%; left: 10%; }
+.main__sales_stock { width: 30%; }
+.main__sales-product { width: 320px; height: 185px; }
+.main__sales-product-img { width: 320px; height: 185px; }
+.main__sales-product:after { width: 310px; }
+.main__sales-product strong { width: 95px; }
+.main__sections-inner { margin: 1.7% 0 0 0; }
+.main__sections-inner-prod { width: 315px; height: 185px; }
+.main__sections-inner-img { width: 315px; height: 185px; }
+.main__sections-inner-prod:before { width: 303px; }
+.main__sections-inner-gear { top: 67%; }
+.main__sections-inner-wheels { top: 66.5%; }
+.main__sections-inner-accessories { top: 68%; left: 7.58%; }
+.main__sections-inner-instruments { width: 30px; height: 30px; top: 68.5%; left: 8.5%; }
+.main__sections-inner-accumulators { left: 7.58%; }
+.footer__copyright span:first-child { width: 28%; }
+
+.header__mini-nav { top: 89%; left: -177%; }
+.header__mini-link { padding: 5% 0 1% 15%; }
+.search__icon-search-mini { top: 3%; left: 97.5%; }
 }
 
 @media only screen  and (max-width : 1399px) {
@@ -139,7 +160,7 @@
 .search input { padding: 0.6% 0 0.6% 2%; font-size: 16px; }
 .search__basket { margin: -5% 1% 0 0; width: 60px; height: 42px; }
 .search__login { margin: -4% 3% 0 0%; width: 128px; height: 27px; font-size: 16px }
-.search__login:before { top: 4%; left: 3%; width: 40px; height: 27px; }
+.search__login:before { top: 0%; left: 5%; width: 40px; height: 27px; }
 .search__login span { left: 40%; }
 .main__menu { padding: 1% 2% 0 2%; }
 .main__menu-link { padding: 5px 30px 10px 30px; }
@@ -174,18 +195,22 @@
 .main__bottom_menu-wrap ul { margin: 0; }
 .main__bottom_menu-wrap li { padding: 0% 0; }
 .footer__copyright { font-size: 16px; }
+.footer__copyright span:first-child {  width: 30%; }
 
 .header__mini { height: 55px; }
 .header__mini-leftlogo { width: 14.5%; }
 .header__mini-logo { width: 70px; height: 40px; background-size: contain; }
-.header__mini-btn { width: 70px; height: 70px; margin: 0 3% 0 0%; }
-.header__mini-btn:hover { width: 70px; height: 70px; }
+
+
+.header__mini-btn { width: 40px; height: 40px; margin: 0 0% 0 0%; background-size: contain; }
+.header__mini-btn:hover { width: 55px; height: 55px; }
+
 .header__main-mini { width: 84%; }
 .header__mini-nav { width: 252%; top: 91%; left: -152%; }
 .header__mini-link { font-size: 16px; padding: 3% 0 5% 15%;}
 .header__mini-link:before { width: 5px; height: 20px; }
 .header__mini-link:hover:before { width: 5px; height: 20px; }
-.search__mini {  width: 136%;  margin: 0.5% 0 0 0.5%; }
+.search__mini {  width: 100%;  margin: 0.5% 0 0 0.5%; }
 .search__mini input { padding: 0.8% 0 0.8% 2%; border-radius: 15px;}
 .search__icon-search-mini { top: 0; left: 98%; width: 30px; height: 35px; }
 .last__items-mini { width: 45px; height: 35px; border-radius: 13px; padding: 1%; margin: 0.4% 0 0 3%; }
