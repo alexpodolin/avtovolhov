@@ -161,17 +161,17 @@
 .search__basket { margin: -5% 1% 0 0; width: 60px; height: 42px; }
 .search__login { margin: -4% 3% 0 0%; width: 128px; height: 27px; font-size: 16px }
 .search__login:before { top: 0%; left: 5%; width: 40px; height: 27px; }
-.search__login span { left: 40%; }
+.search__login span { top: 10%; left: 40%; }
 .main__menu { padding: 1% 2% 0 2%; }
 .main__menu-link { padding: 5px 30px 10px 30px; }
 .main__sales_stock { width: 27%; }
-.main__sales_stock p { font-size: 16px; margin: 10% 0 6% 0; padding: 2.5% 0; }
+.main__sales_stock p { font-size: 16px; margin: 8% 0 6% 0; padding: 2.5% 0; }
 .main__sales-product { width: 290px; height: 180px; margin: 0 0 5% 0; }
 .main__sales-product:before { width: 75px; height: 75px; }
 .main__sales-product-img {  width: 290px; height: 180px; }
 .main__sales-product strong { width: 82px; height: 27px; padding: 0% 0 0 0; top: 15%; right: 5%; }
 .main__sales-product:after { width: 96%; left: 1.8%; }
-.main__sales-product-link { top: 70%; left: 23%; font-size: 11px; }
+.main__sales-product-link { top: 69.5%; left: 22%; width: 76%; font-size: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .main__sales-jerrycan { width: 20px; height: 25px; }
 .main__sales-gear { width: 36px; height: 29px; top: 68%; }
 .main__sales-wheel { width: 30px; height: 30px; top: 68%; left: 8%; }
@@ -180,7 +180,7 @@
 .main__sections-inner-prod { width: 285px; height: 180px; margin: 0 0 1.7% 0; }
 .main__sections-inner-img { width: 285px; height: 180px; }
 .main__sections-inner-prod:before { width: 273px; left: 2.3%; }
-.main__sections-inner-link { top: 69%; }
+.main__sections-inner-link { top: 70%; }
 .main__sections-inner-gear { width: 37px; height: 29px; }
 .main__sections-inner-jerrycan { width: 20px; height: 30px; top: 67.5%; left: 10%; }
 .main__sections-inner-wheels { width: 30px; height: 31px; }
@@ -207,7 +207,7 @@
 
 .header__main-mini { width: 84%; }
 .header__mini-nav { width: 252%; top: 91%; left: -152%; }
-.header__mini-link { font-size: 16px; padding: 3% 0 5% 15%;}
+.header__mini-link { font-size: 16px; padding: 3% 0 5% 15%; }
 .header__mini-link:before { width: 5px; height: 20px; }
 .header__mini-link:hover:before { width: 5px; height: 20px; }
 .search__mini {  width: 100%;  margin: 0.5% 0 0 0.5%; }
@@ -223,5 +223,162 @@
 }
 
 @media only screen  and (max-width : 1279px) {
-
+.header { height: 90px; }
+.header__left_tagline { font-size: 30px; }
+.header__left_la-logo { width: 80px; height: 47px; margin: -3% 0 0 5%; }
+.header__main_tagline { font-size: 36px; margin: 4% 25% 7% 27%; }
+.search { margin: -6% 0 0 3%; }
+.search input { padding: 1% 0 1% 2%; font-size: 12px; border-radius: 8px; border: 2px solid #303030;}
+.search__icon-search { top: 5%; left: 96%; background-size: contain; width: 24px; height: 24px; }
+.last__items { margin: -6% 0 0 3%; width: 29px; height: 25px; border-radius: 8px; border: 2px solid #303030; }
+.last__items:before { top: 23%; left: 9%; width: 19px; height: 12px; }
+.search__basket { margin: -7% 1% 0 0.5%; width: 46px; height: 34px; }
+.search__basket:before { font-size: 10px; top: 0%; left: 22%; }
+.search__login { margin: -6% 2% 0 0%; width: 100px; height: 20px; font-size: 14px; border: 2px solid #303030; border-radius: 8px; }
+.search__login:before { top: 0%; left: 5%; width: 38px; height: 20px; }
+.search__login span { top: -4%;  left: 40%; }
+.header__right_tagline { font-size: 30px; }
+.header__right_insta { width: 55px; height: 55px; margin: 4% 0 0 13%; }
+.main__menu { padding: 0.5% 2% 0 2%; }
+.main__menu-link { padding: 3px 20px 5px 20px; font-size: 20px; border-radius: 10px; }
+.main__sales_stock { width: 24%; }
+.main__sales_stock p { font-size: 14px; margin: 7% 0 6% 0; padding: 2% 0 1% 0; border-radius: 10px; }
+.main__sales-product { width: 235px; height: 130px; margin: 0 0 7% 0;}
+.main__sales-product-img { width: 235px; height: 130px; border: 2px solid #C92F2F; }
+.main__sales-product:before { width: 65px; height: 60px; }
+.main__sales-product strong { width: 67px; height: 20px;  padding: 0 0 1% 0; font-size: 14px; }
+.main__sales-product:after { width: 97.5%; height: 33px; left: 1.1%; }
+.main__sales-product-link { top: 69%; font-size: 12px; }
+.main__sales-jerrycan { width: 18px; height: 24px; }
+.main__sales-gear { width: 31px; height: 26px; top: 67.5%; }
+.main__sales-wheel { width: 25px; height: 25px; top: 67.5%; left: 7.3%; }
+.main__sections {  margin: 0 0 0 3%; }
+.main__sections p { font-size: 16px; padding: 0.7% 0 0.4% 0; margin: 2% 0 0 0; border-radius: 10px; }
+.main__sections-inner-prod { width: 230px; height: 135px; }
+.main__sections-inner-img { width: 230px; height: 135px; border: 2px solid #000000; }
+.main__sections-inner-prod:before { width: 223px; left: 1.7%; height: 33px; }
+.main__sections-inner-link { top: 69%; font-size: 14px; }
+.main__sections-inner-gear { width: 30px; height: 25px; top: 68%; left: 5.5%; }
+.main__sections-inner-jerrycan { width: 18px; height: 25px; top: 67.5%; left: 9%;}
+.main__sections-inner-wheels { width: 25px; height: 25px; top: 68.5%; }
+.main__sections-inner-accessories { width: 25px; height: 22px; }
+.main__sections-inner-instruments { width: 25px; height: 23px; top: 68.5%; left: 7.5%; }
+.main__sections-inner-accumulators { width: 25px; height: 22px; top: 69%; left: 8%; }
+.main__sections-inner-autoglass { width: 30px; height: 20px; top: 72%; left: 7%; }
+.main__sections-inner-parts { width: 23px; height: 22px; top: 69%; left: 7%; }
+.main__sections-inner-fastening { width: 30px; height: 22px; top: 69%; }
+.main__bottom_menu-container:before { height: 5px; }
+.main__bottom_menu-wrap p { font-size: 14px; margin-bottom: 3%;}
+.main__bottom_menu-link { font-size: 12px; }
+.footer__copyright { font-size: 14px; }
+.footer__copyright span:first-child { width: 31%; padding: 0 0% 0 0; }
 }
+
+@media only screen  and (max-width : 1023px) {	
+.header__left_tagline { font-size: 29px; }
+.search { margin: -6% 0 0 3.5%; }
+.header__right_insta { margin: 4% 0 0 8%; }
+.main__menu { padding: 1% 2% 0 2%; }
+.main__menu-link { padding: 5px 20px 5px 20px; font-size: 18px; }
+.main__sales_stock p { letter-spacing: 0px; } 
+.main__sales-product { width: 220px; margin: 0 0 8% 0; }
+.main__sales-product-img { width: 220px; }
+.main__sales-product-link { top: 68%; font-size: 11px; }
+.main__sections p { letter-spacing: 0px; } 
+.main__sections-inner-prod { width: 220px; }
+.main__sections-inner-img { width: 220px; }
+.main__sections-inner-prod:before { width: 214px; left: 1.6%; }
+.main__sections-inner-gear { top: 67%; }
+.main__sections-inner-jerrycan { width: 15px; height: 23px; top: 67%; }
+.main__sections-inner-wheels { top: 66.5%; }
+.main__sections-inner-accessories { top: 67.5%; left: 7.5%; }
+.main__sections-inner-instruments { width: 23px; height: 20px; top: 68%; left: 7.5%; }
+.main__sections-inner-accumulators { width: 22px; height: 20px; top: 68%; left: 8.5%; }
+.main__sections-inner-autoglass { top: 71%; }
+.main__sections-inner-parts { top: 68%; }
+.main__sections-inner-fastening { left: 5%; }
+.main__bottom_menu-wrap p { margin-top: 7%; }
+.main__bottom_menu-wrap li { margin: -1% 0; }
+.main__bottom_menu-link { font-size: 12px; }
+.footer__copyright { font-size: 12px; }
+.footer__copyright span:first-child { width: 29%; }
+}
+
+@media only screen  and (max-width : 959px) {
+.header__leftlogo { width: 23%; }
+.header__left_tagline { font-size: 24px; }
+.header__main { width: 55%; }
+.header__main_tagline { font-size: 30px; }
+.search input { font-size: 10px; padding: 2% 0 1.5% 2%; font-size: 12px; }
+.search__icon-search { top: 7%; left: 92%; width: 25px; height: 22px; }
+.last__items { width: 30px; }
+.search__basket { width: 50px; height: 35px; }
+.search__login { font-size: 12px; }
+.search__login span { top: -6%; }
+.header__right_tagline { font-size: 24px; }
+.header__right_insta { margin: 6% 0 0 8%; }
+.main__menu-list { display: flex; flex-direction: column; }
+.main__menu-link { display: flex; justify-content: center; padding: 0.5% 0; margin: 0 0 0.5% 0;}
+.main__sales { flex-direction: column; } 
+.main__sales_stock { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; width: -webkit-fill-available; }
+.main__sales_stock p { width: -webkit-fill-available; font-size: 16px; margin: 0 0 1% 0; padding: 1% 0 0.5% 0; }
+.main__sales-product { width: 235px; height: 135px; margin: 0 0 0% 0; }
+.main__sales-product-img { width: 235px; height: 135px; }
+.main__sales-product-link { font-size: 12px; }
+.main__sections { margin: 0 0 0 0; }
+.main__sections-inner { margin: 1% 0 0 0; }
+.main__sections-inner-prod { width: 235px; }
+.main__sections-inner-img { width: 235px; }
+.main__sections-inner-prod:before { width: 230px; left: 1.4%; }
+.main__sections-inner-link { top: 69.5%; }
+.main__sections-inner-gear { top: 68%; left: 6%; }
+.main__sections-inner-jerrycan { width: 20px; height: 25px; top: 67.5%; }
+.main__sections-inner-wheels { width: 27px; height: 27px; top: 67%; left: 7%; }
+.main__sections-inner-accessories { top: 68%; }
+.main__sections-inner-instruments { top: 69%; }
+.main__sections-inner-accumulators { width: 25px; height: 20px; top: 70%; left: 7.5%; }
+.main__sections-inner-autoglass { width: 30px; height: 25px; top: 70%; }
+.main__sections-inner-parts { width: 25px; height: 25px; }
+.main__sections-inner-fastening { width: 30px; height: 25px; top: 67%; }
+.footer__copyright span:first-child { width: 37%; }
+}
+
+@media only screen  and (max-width : 767px) {	
+.header__left_tagline { font-size: 22px; }
+.header__left_la-logo { width: 68px; height: 40px; margin: -5% 0 0 5%; }
+.header__main_tagline { font-size: 24px; }
+.search input { padding: 2.5% 0 2% 2%; font-size: 12px; }
+.search__icon-search { top: 5%; left: 91%; }
+.last__items:before { left: 8.5%; }
+.search__basket { width: 55px; height: 35px; margin: -6% 1% 0 0.5%; }
+.header__right_tagline { font-size: 22px; }
+.header__right_insta { margin: 5% 0 0 8%; width: 55px; height: 50px; }
+.main__sales_stock { flex-direction: column; align-items: center; }
+.main__sales-product { margin: 0 0 2% 0; width: 350px; height: 230px; }
+.main__sales-product-img { width: 350px; height: 230px; }
+
+
+
+.main__bottom_menu-container { flex-wrap: wrap; }
+.main__bottom_menu-wrap p { font-size: 14px; }
+.main__bottom_menu-wrap li { margin: -2% 0; }
+.main__bottom_menu-link { font-size: 12px; }
+.footer__copyright span:first-child { width: max-content; }
+/*
+@media only screen  and (max-width : 639px) {	
+}
+
+@media only screen  and (max-width : 479px) {	
+}
+
+@media only screen  and (max-width : 415px) {	
+}
+
+@media only screen  and (max-width : 376px) {	
+}
+
+@media only screen  and (max-width : 361px) {	
+}
+
+@media only screen  and (max-width : 359px) {	
+}*/
