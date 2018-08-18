@@ -209,7 +209,7 @@ a:hover {
     position: absolute;
     /*top: 1px;
     left: 5px;*/
-    top: -2%;
+    top: -3%;
     left: 4%;
     /*width: 25px;
     height: 30px;*/
@@ -611,6 +611,7 @@ a:hover {
     top: 0;
     left: 0;
 	background: url(../img/bottom_line.png) no-repeat;
+	background-size: cover;
 }
 .main__bottom_menu-wrap {
 	/*margin: 0.5% 0 0 0;*/
