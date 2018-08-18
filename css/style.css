@@ -706,18 +706,20 @@ a:hover {
 /*===Выпадающее меню================================================================*/
 .header__mini-btn {
 	background: transparent url("../img/btn_menu.png") no-repeat 50% 60%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 80px;
-    height: 80px;	
+    height: 75px;	
     border: none;
     margin: 0 0 0 2%;
     position: relative;
 }
 .header__mini-btn:hover {
-	background: transparent url("../img/btn_menu_hover.png")  ;
+	background: transparent url("../img/btn_menu_hover.png") no-repeat 50% 60%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 80px;
-    height: 80px;	
+    height: 75px;	
     border: none;
     opacity: 1;
     cursor: pointer;
@@ -734,7 +736,7 @@ a:hover {
 	background-color: #303030;
 	width: 332%;
 	/*top: 100%;*/
-	top: 97%;
+	top: 100%;
 	/*left: -233%;*/
 	left: -197%;
 	border-bottom-left-radius: 20px;
