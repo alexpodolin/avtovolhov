@@ -171,7 +171,7 @@ a:hover {
     background: url(../img/basket_empty.png) no-repeat;
     background-size: contain;
     /*margin: 3.1% 0 0 -2.5%;*/
-    margin: -3.9% 0 0 0;
+    margin: -3.9% 0 0 1%;
     position: relative;
 }
 .search__basket:before {
@@ -202,7 +202,7 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	/*margin: 4.1% 0 0 0;*/
-	margin: -3% 0 0 0;
+	margin: -3% 0 0 1%;
 }
 .search__login:before {
 	content: "";
@@ -315,7 +315,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 }
-.main__sales_stock p {
+.main__sales_stock-link {
 	text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 2px;
