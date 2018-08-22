@@ -36,7 +36,8 @@ a:hover {
 	background-image: url("../img/header_bg.jpg");
 	background-position: center center;
 	width: 100%;
-    height: 175px;
+    /*height: 175px;*/
+    height: 160px;
 }
 .header__leftlogo {
 	width: 20%;	
@@ -450,11 +451,49 @@ a:hover {
     flex-wrap: wrap;
     margin: 2.2% 0 0 0;
 }
-.main__sections-inner-prod  {
-	position: relative;
+
+.main__sections-inner-link {
+	display: flex;
+	/*text-transform: uppercase;*/
+    /*font-size: 26px;*/
+    position: relative;
+   /* z-index: 100;*/
+
+    width: 430px;
+	height: 260px;
+	margin: 0 0 2.1% 0;
+	border-radius: 20px;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.main__sections-inner-link:hover { 
+	color: #FFFFFF;
+	opacity: 1;
+	filter: none;
+}
+
+.main__sections-inner-link:before{
+	content: "";
+	position: absolute;
+    width: 418px;
+    height: 60px;
+    top: 65%;
+    left: 1.4%;
+	background: url(../img/stock_line.png) no-repeat;
+	background-size: contain;
+	z-index: 1
+} 
+
+/*.main__sections-inner-prod  {
+
 	display: flex;
 	flex-direction: column;
-	/*width: 405px;*/
 	width: 430px;
 	height: 260px;
 	margin: 0 0 2.1% 0;
@@ -470,20 +509,25 @@ a:hover {
 }
 .main__sections-inner-prod:hover {
 	filter: none;
-}
+}*/
 .main__sections-inner-img {
-	/*width: 405px;*/
 	width: 430px;
     height: 260px;
     box-sizing: border-box;
     border: 5px solid #000000;
     border-radius: 20px;
 }
-.main__sections-inner-prod:before{
+.main__sections-inner-name {
+	text-transform: uppercase;
+    font-size: 26px;
+    position: absolute;
+    top: 72%;
+    left: 30%;
+    z-index: 100;
+}
+/*.main__sections-inner-prod:before{
 	content: "";
 	position: absolute;
-/*    width: 394px;
-    height: 60px;*/
     width: 418px;
     height: 60px;
     top: 65%;
@@ -491,13 +535,9 @@ a:hover {
 	background: url(../img/stock_line.png) no-repeat;
 	background-size: contain;
 	z-index: 1
-} 
-.main__sections-inner-link {
+} */
+/*.main__sections-inner-link {
 	text-transform: uppercase;
-	/*font-size: 24px;
-    position: absolute;
-    top: 71%;
-    left: 27%;*/
     font-size: 26px;
     position: absolute;
     top: 72%;
@@ -507,7 +547,7 @@ a:hover {
 .main__sections-inner-link:hover { 
 	color: #FFFFFF;
 	opacity: 1;
-}
+}*/
 .main__sections-inner-gear {
 	content: "";
     position: absolute;
