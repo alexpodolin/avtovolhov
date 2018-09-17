@@ -38,14 +38,11 @@
 <meta itemprop="subOrganization" content="АвтоВолхов">
 <meta itemprop="telephone" content="123456789">
 
-<header class="header header__hide" itemscope itemtype="http://schema.org/WPHeader">
+<header class="header" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header__leftlogo">
 		<span class="header__left_tagline" itemprop="name">ЛенОблАвто</span>
 		<span class="header__left_la-logo" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></span>
 	</div>
-
-	<div class="header__menu-btn"></div>
-
 	<div class="header__main">
 		<span class="header__main_tagline">Автозапчасти</span>
 		<div class="form__wrapper">
@@ -59,7 +56,8 @@
 				</fieldset>
 			</form>
 			<button type="button" class="last__items"></button>
-			<div class="search__basket"></div>
+			<!-- <a href="#" class="search__basket-link"><div class="search__basket"></div></a> -->
+			<a href="#" class="search__basket"></a>
 			<a href="login" class="search__login"><span>Вход</span></a>
 		</div>
 	</div>
@@ -68,43 +66,6 @@
 		<span class="header__right_tagline" itemprop="name">АвтоВолхов</span>
 		<a href="#" class="header__right_insta" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></a>
 	</div>	
-</header>
-
-<header class="header__mini header__mini-show" itemscope itemtype="http://schema.org/WPHeader">
-	<div class="header__mini-leftlogo">
-		<span class="header__mini-logo"></span>
-		<div class="header__mini-btn">
-			<nav class="header__mini-nav">
-				<ul class="header__mini-ul">
-					<li class="header__mini-li"><a href="main" class="header__mini-link">Главная</a></li>
-					<li class="header__mini-li"><a href="catalogs" class="header__mini-link">Каталоги</a></li>
-					<li class="header__mini-li"><a href="brends" class="header__mini-link">Бренды</a></li>
-					<li class="header__mini-li"><a href="to" class="header__mini-link">Запчасти для ТО</a></li>
-					<li class="header__mini-li"><a href="help" class="header__mini-link">Помощь</a></li>
-					<li class="header__mini-li"><a href="contacts" class="header__mini-link">Контакты</a></li>
-					<li class="header__mini-li"><a href="forum" class="header__mini-link" id="header__mini-link-last">Форум</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-
-	<div class="header__main header__main-mini">
-		<div class="form__wrapper form__wrapper-mini">
-			<form class="search search__mini" id="search">
-				<fieldset>
-					<legend></legend>
-					<label for="search__by" class="search__label">
-						<input id="search__by" name="Поиск" placeholder="Номер, название или VIN" type="text">						
-					</label>
-					<button type="submit" form="search" class="search__icon-search search__icon-search-mini"></button>
-				</fieldset>
-			</form>
-			<button type="button" class="last__items last__items-mini"></button>
-			<!-- <a href="#" class="search__basket-link search__basket-link-mini"><div class="search__basket search__basket-mini"></div></a> -->
-			<a href="#" class="search__basket search__basket-mini"></a>
-			<a href="login" class="search__logout"><span>Выход</span></a>
-		</div>
-	</div>
 </header>
 
 <main class="main__inner">
@@ -162,7 +123,6 @@
 			<p>Выберите интересующий раздел нажатием</p>
 
 			<div class="main__sections-inner">
-
 				<a href="#" class="main__sections-inner-link">
 					<!-- <div class="main__sections-inner-prod">	 -->			
 						<img src="img/img_02.jpg" class="main__sections-inner-img" alt="автозапчасти">	

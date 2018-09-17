@@ -713,14 +713,16 @@ a:hover {
 /*other page*/
 
 .header__mini {
-	display: none;
-}
-.header__hide {
-	display: none;
-}
-.header__mini-show {
 	display: flex;
+}
+#header__hide {
+	display: flex;
+}
+#header__mini-show {
+	display: none;
 	box-sizing: border-box;
+	position: fixed;
+	z-index: 999;
 }
 .header__mini {
 	width: 100%;

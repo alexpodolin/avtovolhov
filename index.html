@@ -5,14 +5,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="авто, автозапчасти, запчасти, волхов, недорого, доставка">		
-	<meta name="description" content="продааж автозапчастей в городе Волхов и области">
+	<meta name="description" content="продажи автозапчастей в городе Волхов и области">
 	<meta name="revisit-after" content="15 days">
 	<meta name="robots" content="all">
 	<meta name="author" content="Александр Подолин, alex.podolin@gmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 	<style media="all,print,screen"></style>
-	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css" media="all">
 	<link rel="stylesheet" href="css/style.css">
@@ -27,7 +25,7 @@
 <meta itemprop="address" content="г.Волхов">
 <meta itemprop="branchOf" content="АвтоВолхов">
 <meta itemprop="brand" content="Газ, ваз, Уаз">
-<meta itemprop="description" content="продааж автозапчастей в городе Волхов и области">
+<meta itemprop="description" content="продажа автозапчастей в городе Волхов и области">
 <meta itemprop="email" content="email@typehere.ru">
 <meta itemprop="geo" content="59.916744, 32.331544">
 <meta itemprop="image" content="img/header_la_logo.png">
@@ -38,11 +36,14 @@
 <meta itemprop="subOrganization" content="АвтоВолхов">
 <meta itemprop="telephone" content="123456789">
 
-<header class="header" itemscope itemtype="http://schema.org/WPHeader">
+<header class="header" id="header__hide" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header__leftlogo">
 		<span class="header__left_tagline" itemprop="name">ЛенОблАвто</span>
 		<span class="header__left_la-logo" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></span>
 	</div>
+
+	<div class="header__menu-btn"></div>
+
 	<div class="header__main">
 		<span class="header__main_tagline">Автозапчасти</span>
 		<div class="form__wrapper">
@@ -56,8 +57,7 @@
 				</fieldset>
 			</form>
 			<button type="button" class="last__items"></button>
-			<!-- <a href="#" class="search__basket-link"><div class="search__basket"></div></a> -->
-			<a href="#" class="search__basket"></a>
+			<div class="search__basket"></div>
 			<a href="login" class="search__login"><span>Вход</span></a>
 		</div>
 	</div>
@@ -67,6 +67,42 @@
 		<a href="#" class="header__right_insta" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></a>
 	</div>	
 </header>
+
+<div class="header__mini" id="header__mini-show" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="header__mini-leftlogo">
+		<span class="header__mini-logo"></span>
+		<div class="header__mini-btn">
+			<nav class="header__mini-nav">
+				<ul class="header__mini-ul">
+					<li class="header__mini-li"><a href="main" class="header__mini-link">Главная</a></li>
+					<li class="header__mini-li"><a href="catalogs" class="header__mini-link">Каталоги</a></li>
+					<li class="header__mini-li"><a href="brends" class="header__mini-link">Бренды</a></li>
+					<li class="header__mini-li"><a href="to" class="header__mini-link">Запчасти для ТО</a></li>
+					<li class="header__mini-li"><a href="help" class="header__mini-link">Помощь</a></li>
+					<li class="header__mini-li"><a href="contacts" class="header__mini-link">Контакты</a></li>
+					<li class="header__mini-li"><a href="forum" class="header__mini-link" id="header__mini-link-last">Форум</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="header__main header__main-mini">
+		<div class="form__wrapper form__wrapper-mini">
+			<form class="search search__mini" id="search">
+				<fieldset>
+					<legend></legend>
+					<label for="search__by" class="search__label">
+						<input id="search__by" name="Поиск" placeholder="Номер, название или VIN" type="text">						
+					</label>
+					<button type="submit" form="search" class="search__icon-search search__icon-search-mini"></button>
+				</fieldset>
+			</form>
+			<button type="button" class="last__items last__items-mini"></button>
+			<a href="#" class="search__basket search__basket-mini"></a>
+			<a href="login" class="search__logout"><span>Выход</span></a>
+		</div>
+	</div>
+</div>
 
 <main class="main__inner">
 	<nav class="main__menu itemscope" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -123,58 +159,41 @@
 			<p>Выберите интересующий раздел нажатием</p>
 
 			<div class="main__sections-inner">
-				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod">	 -->			
-						<img src="img/img_02.jpg" class="main__sections-inner-img" alt="автозапчасти">	
-						<img src="img/gear.png" class="main__sections-inner-gear" alt="автозапчасти">
-						<!-- <a href="#" class="main__sections-inner-link">Автозапчасти</a>	 -->	
-						<span class="main__sections-inner-name">Автозапчасти</span>							
-					<!-- </div> -->
+
+				<a href="#" class="main__sections-inner-link">		
+					<img src="img/img_02.jpg" class="main__sections-inner-img" alt="автозапчасти">	
+					<img src="img/gear.png" class="main__sections-inner-gear" alt="автозапчасти">	
+					<span class="main__sections-inner-name">Автозапчасти</span>							
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_03.jpg" class="main__sections-inner-img" alt="масла и автохимия">	
-						<img src="img/jerrycan.png" class="main__sections-inner-jerrycan" alt="масла и автохимия">
-						<!-- <a href="#" class="main__sections-inner-link">Масла и автохимия</a> -->	
-						<span class="main__sections-inner-name">Масла и автохимия</span>		
-					<!-- </div> -->
+					<img src="img/img_03.jpg" class="main__sections-inner-img" alt="масла и автохимия">	
+					<img src="img/jerrycan.png" class="main__sections-inner-jerrycan" alt="масла и автохимия">	
+					<span class="main__sections-inner-name">Масла и автохимия</span>		
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_04.jpg" class="main__sections-inner-img" alt="шины и диски">	
-						<img src="img/wheel.png" class="main__sections-inner-wheels" alt="шины и диски">
-						<!-- <a href="#" class="main__sections-inner-link">Шины и диски</a> -->		
-						<span class="main__sections-inner-name">Шины и диски</span>
-					<!-- </div> -->
+					<img src="img/img_04.jpg" class="main__sections-inner-img" alt="шины и диски">	
+					<img src="img/wheel.png" class="main__sections-inner-wheels" alt="шины и диски">	
+					<span class="main__sections-inner-name">Шины и диски</span>
 				</a>
 
 				<a href="#" class="main__sections-inner-link">	
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_05.jpg" class="main__sections-inner-img" alt="аксессуары">	
-						<img src="img/accessories.png" class="main__sections-inner-accessories" alt="аксессуары">
-						<!-- <a href="#" class="main__sections-inner-link">Аксессуары</a>	 -->		
-						<span class="main__sections-inner-name">Аксессуары</span>
-					<!-- </div> -->
+					<img src="img/img_05.jpg" class="main__sections-inner-img" alt="аксессуары">	
+					<img src="img/accessories.png" class="main__sections-inner-accessories" alt="аксессуары">		
+					<span class="main__sections-inner-name">Аксессуары</span>
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_06.jpg" class="main__sections-inner-img" alt="инструменты">	
-						<img src="img/instruments.png" class="main__sections-inner-instruments" alt="инструменты">
-						<!-- <a href="#" class="main__sections-inner-link">Инструменты</a> -->			
-						<span class="main__sections-inner-name">Инструменты</span>			
-					<!-- </div> -->
+					<img src="img/img_06.jpg" class="main__sections-inner-img" alt="инструменты">	
+					<img src="img/instruments.png" class="main__sections-inner-instruments" alt="инструменты">			
+					<span class="main__sections-inner-name">Инструменты</span>			
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_01.jpg" class="main__sections-inner-img" alt="аккумуляторы">	
-						<img src="img/accumulators.png" class="main__sections-inner-accumulators" alt="аккумуляторы">
-						<!-- <a href="#" class="main__sections-inner-link">Аккумуляторы</a> -->	
-						<span class="main__sections-inner-name">Аккумуляторы</span>		
-					<!-- </div> -->
+					<img src="img/img_01.jpg" class="main__sections-inner-img" alt="аккумуляторы">	
+					<img src="img/accumulators.png" class="main__sections-inner-accumulators" alt="аккумуляторы">
+					<span class="main__sections-inner-name">Аккумуляторы</span>		
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
@@ -187,27 +206,20 @@
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_08.jpg" class="main__sections-inner-img" alt="кузовные детали">	
-						<img src="img/parts.png" class="main__sections-inner-parts" alt="кузовные детали">
-						<!-- <a href="#" class="main__sections-inner-link">Кузовные детали</a> -->	
-						<span class="main__sections-inner-name">Кузовные детали</span>		
-					<!-- </div> -->
+					<img src="img/img_08.jpg" class="main__sections-inner-img" alt="кузовные детали">	
+					<img src="img/parts.png" class="main__sections-inner-parts" alt="кузовные детали">
+					<span class="main__sections-inner-name">Кузовные детали</span>		
 				</a>
 
 				<a href="#" class="main__sections-inner-link">
-					<!-- <div class="main__sections-inner-prod"> -->
-						<img src="img/img_09.jpg" class="main__sections-inner-img" alt="автокрепеж">	
-						<img src="img/auto_fastening.png" class="main__sections-inner-fastening" alt="автокрепеж">
-						<!-- <a href="#" class="main__sections-inner-link">Автокрепеж</a> -->	
-						<span class="main__sections-inner-name">Автокрепеж</span>
-					<!-- </div> -->
+					<img src="img/img_09.jpg" class="main__sections-inner-img" alt="автокрепеж">	
+					<img src="img/auto_fastening.png" class="main__sections-inner-fastening" alt="автокрепеж">
+					<span class="main__sections-inner-name">Автокрепеж</span>
 				</a>
 
 			</div>	
 		</div>
 	</div>
-	<!-- <img src="img/bottom_line.png" class="main__inner_bottom_line" alt="line"> -->
 
 	<div class="main__bottom_menu">
 		<div class="main__bottom_menu-container">

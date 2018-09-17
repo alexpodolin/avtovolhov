@@ -539,7 +539,7 @@
 .main__sections-inner { flex-direction: column; align-items: center; }
 .footer__copyright { display: flex; flex-direction: column; }
 
-.header__hide { display: none; }
+/*#header__hide { display: none; }*/
 .header__mini { height: 40px; }
 .header__mini-leftlogo { width: 32%; }
 .header__mini-logo { width: 52px; height: 29px; }
