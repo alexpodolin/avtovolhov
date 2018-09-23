@@ -58,7 +58,7 @@
 			</form>
 			<button type="button" class="last__items"></button>
 			<a href="#" class="search__basket"></a>
-			<a href="login" class="search__login"><span>Вход</span></a>
+			<a class="search__login" onclick="show_login_form();"><span>Вход</span></a>
 		</div>
 	</div>
 
@@ -268,6 +268,33 @@
 		<span><small> &copy; Любое копирование запрещено</small></span>	
 	</div>
 </footer>
+
+<div id="page__login">
+	<div class="login__wrapper">
+		<div class="login__wrapper-top">
+			<span class="login__la-logo"></span>
+			<p>Вход в систему</p>
+			<a href="#" class="login__insta-logo"></a>
+		</div>
+		<form class="form__login" autocomplete="on">
+			<fieldset>
+				<legend class="form__login-legend">Для входа в систему введите адрес электронной почты и пароль
+				</legend>
+				<input type="email" name="form__login-email" placeholder="электронная почта" required>
+				<input type="password" name="form__login-passwd" placeholder="пароль" required>
+
+				<input type="checkbox" id="form__login-remember-me" name="form__login-remember-me">
+				<label for="form__login-remember-me">Сохранить вход</label>
+
+				<a href="#" class="form__login_forget-passwd">Забыли пароль ?</a>
+
+				<button type="submit" class="form__login-submit">Вход</button>
+				<button type="button" class="form__login-reg">Регистрация нового пользователя</button>
+			</fieldset>
+		</form>
+		<a class="page__login-close" onclick="hide_login_form();"></a>
+	</div>	
+</div>
 
 </div>	
 </body>

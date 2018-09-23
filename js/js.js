@@ -9,6 +9,12 @@ function on_scroll() {
     }
 }
 
-
 window.onscroll=on_scroll
 
+function show_login_form() {
+	document.getElementById('page__login').style.display = 'flex';
+}
+
+function hide_login_form() {
+	document.getElementById('page__login').style.display = 'none';
+}
