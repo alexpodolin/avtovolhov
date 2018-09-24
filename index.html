@@ -278,8 +278,7 @@
 		</div>
 		<form class="form__login" autocomplete="on">
 			<fieldset>
-				<legend class="form__login-legend">Для входа в систему введите адрес электронной почты и пароль
-				</legend>
+				<legend class="form__login-legend">Для входа в систему введите адрес электронной почты и пароль</legend>
 				<input type="email" name="form__login-email" placeholder="электронная почта" required>
 				<input type="password" name="form__login-passwd" placeholder="пароль" required>
 
@@ -289,11 +288,43 @@
 				<a href="#" class="form__login_forget-passwd">Забыли пароль ?</a>
 
 				<button type="submit" class="form__login-submit">Вход</button>
-				<button type="button" class="form__login-reg">Регистрация нового пользователя</button>
+				<button type="button" id="form__login-reg" onclick="show_reg_form();">Регистрация нового пользователя</button>
 			</fieldset>
 		</form>
 		<a class="page__login-close" onclick="hide_login_form();"></a>
 	</div>	
+</div>
+
+<div id="page__registration">
+	<div class="registration__wrapper">
+		<p>Регистрация нового Пользователя</p>
+	
+		<form class="form__registration" autocomplete="on">
+			<fieldset>
+				<legend class="form__registration-legend">Все поля обязательные для заполнения</legend>
+				<input type="text" name="form__registration-fio" class="form__registration-fio" placeholder="Фамилия Имя Отчество" required>
+
+				<div class="form__registration-login">
+					<input type="email" name="form__registration-login" placeholder="логин - ваш e-mail" required>
+					<button type="button" id="form__registration-chk-name" class="form__registration-chk-name">Проверить</button>
+				</div>
+
+				<input type="tel" name="form__registration-tel" class="form__registration-tel" placeholder="Введите ваш номер телефона для связи" required>
+
+				
+				<button type="button" id="form__registration-send-code">Выслать проверочный код</button>
+				
+				
+			   	<input type="text" name="form__registration-code" class="form__registration-code"  placeholder="Ввести проверочный код" required>			    
+
+			    <input type="checkbox" id="form__registration-accept" name="form__registration-accept">
+				<label for="form__registration-accept">Я согласен с условиями пользовательского соглашения</label>
+
+				<button type="submit" id="form__registration-submit" class="form__registration-submit">Зарегистрироваться</button>			
+			</fieldset>
+		</form>
+		<a class="page__registration-close" onclick="hide_reg_form();"></a>
+	</div>
 </div>
 
 </div>	

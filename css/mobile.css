@@ -266,6 +266,7 @@
 .search__logout span { padding: 0 0 0 10%; font-size: 16px; left: 29%; }
 
 .login__wrapper { margin: 10% 0 0 30%; }
+.registration__wrapper { margin: 10% 0 0 30%; }
 }
 
 @media only screen  and (max-width : 1279px) {
@@ -379,6 +380,7 @@
 .search__icon-search-mini { top: 3%; left: 97%; }
 
 .login__wrapper { margin: 10% 0 0 27%; } 
+.registration__wrapper { margin: 10% 0 0 27%; } 
 }
 
 @media only screen  and (max-width : 959px) {
@@ -431,6 +433,7 @@
 .search__logout span { left: 28%; }
 
 .login__wrapper { margin: 10% 0 0 20%; }
+.registration__wrapper { margin: 10% 0 0 20%; }
 }
 
 @media only screen  and (max-width : 767px) {	
@@ -474,6 +477,7 @@
 .main__bottom_menu-link { font-size: 12px; }
 
 .login__wrapper { margin: 10% 0 0 14%; }
+.registration__wrapper{ margin: 10% 0 0 14%; }
 }
 
 @media only screen  and (max-width : 639px) {
@@ -523,6 +527,9 @@
 
 .login__wrapper { margin: 23% 0 0 0%; }
 .page__login-close { top: -10%; right: 0%; }
+
+.registration__wrapper { margin: 25% 0 0 3%; }
+.page__registration-close { right: -1.5%; }
 }
 
 @media only screen  and (max-width : 479px) {
@@ -546,6 +553,16 @@
 .form__login input[type="checkbox"] ~ label:before { left: 22%; }
 .form__login input[type="checkbox"] ~ label:hover:before { left: 22%; }
 .form__login_forget-passwd { margin: 0 0 0 26%; }
+
+.registration__wrapper { margin: 25% 0 0 0%; }
+.registration__wrapper p { font-size: 20px; }
+.page__registration-close { right: 0%; }
+.form__registration-login { display: flex; flex-direction: column; align-items: center; margin: 0 0 3% 0;}
+.form__registration-login input { width: 96%; }
+#form__registration-send-code { margin: 3% 0 3% 18%; }
+.form__registration input[type="checkbox"] ~ label { margin: 0 0 0 7%; }
+.form__registration input[type="checkbox"] ~ label:before { left: -7%; }
+.form__registration input[type="checkbox"] ~ label:hover:before { left: -7%; }
 }
 
 @media only screen  and (max-width : 415px) {	
@@ -585,6 +602,11 @@
 
 .login__wrapper-top { font-size: 14px; }
 .form__login_forget-passwd { margin: 0 0 0 21%; }
+
+.registration__wrapper p { font-size: 16px; }
+.form__registration input[type="checkbox"] ~ label { margin: 0 0 0 8%; }
+.form__registration input[type="checkbox"] ~ label:before { left: -9%; }
+.form__registration input[type="checkbox"] ~ label:hover:before { left: -9%; }
 }
 
 @media only screen  and (max-width : 359px) {	
@@ -616,6 +638,8 @@
 .form__login input[type="checkbox"] ~ label:before { left: 12%; }
 .form__login input[type="checkbox"] ~ label:hover:before { left: 12%; }
 .form__login_forget-passwd { margin: 0 0 0 17%; }
+
+.form__registration input { font-size: 14px; }
 }
 
 @media only screen  and (max-width : 319px) {	

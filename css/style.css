@@ -793,7 +793,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0
+    padding: 0;
 }
 .page__login-close {
 	content: "";
@@ -923,7 +923,7 @@ a:hover {
 	margin: 3% auto 3% auto;
 	padding: 3% 5%;
 }
-.form__login-reg {
+#form__login-reg {
 	color: #303030;
 	background-color: #FDBD03;
 	border: none;
@@ -934,7 +934,179 @@ a:hover {
 	width: 100%;
 }
 .form__login-submit:hover, 
-.form__login-reg:hover {
+#form__login-reg:hover {
+	cursor: pointer;
+	color: #FDBD03;	
+	background-color: #303030;
+	opacity: 1;
+	border: none;
+}
+/*===Форма регистрации==============================================================*/
+#page__registration {
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	position: absolute;
+	background: url("../img/background.png") no-repeat;
+	background-size: cover;
+}
+.page__registration-close {
+	content: "";
+	position: absolute;	
+	background-image: url("../img/close.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    top: -8%;
+    right: -6%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.registration__wrapper {
+	position: fixed;
+    margin: 10% 0 0 35%;
+    background-color: #ffffff;
+    border: 5px solid #303030;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1%;    
+}
+.registration__wrapper p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #303030;
+    border-radius: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: lighter;
+	margin: 2% 0 1% 0;
+    padding: 2% 0;
+}
+.form__registration fieldset {		
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.form__registration-legend {
+	text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 3% 0 4% 3%;
+}
+.form__registration input {
+	border: 2px solid #303030;
+	border-radius: 10px;
+    margin: 0 0 3% 0;
+    padding: 1% 0 1% 3%;        
+    font-weight: lighter;
+}
+.form__registration input:hover {
+	background-color: #F2F2F2;
+    color: #000000;
+}
+.form__registration input:focus { 
+	background-color: rgb(250, 255, 189);
+	border-color: #80bdff;
+}
+.form__registration-fio {
+	width: 96%;
+}
+.form__registration-login {
+	display: block;
+	width: 100%;
+}
+.form__registration-login input {
+	width: 67%;
+}
+.form__registration-chk-name {
+	color: #303030;
+	background-color: #FDBD03;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	padding: 1.5% 4%;
+}
+.form__registration-chk-name:hover {
+	cursor: pointer;
+	color: #FDBD03;	
+	background-color: #303030;
+	opacity: 1;
+	border: none;
+}
+.form__registration-tel {
+	width: 96%;
+}
+#form__registration-send-code {
+	display: block;
+	color: #303030;
+	background-color: #FDBD03;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	margin: 3% 0 3% 21%;
+	padding: 1.5% 4%;
+
+	-moz-margin-start: 20%;
+	-moz-margin-end: 20%;
+}
+#form__registration-send-code:hover {
+	cursor: pointer;
+	color: #FDBD03;	
+	background-color: #303030;
+	opacity: 1;
+	border: none;
+}
+.form__registration-code {
+	width: 96%;
+}
+.form__registration-submit {
+	width: 100%;
+	color: #303030;
+	background-color: #FDBD03;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	margin: 3% 0 3% 0;
+	padding: 1.5% 4%;
+}
+.form__registration input[type="checkbox"] {
+	display: none;
+}
+.form__registration input[type="checkbox"] ~ label {
+	position: relative;
+    margin: 0 0 0 6%;
+}
+.form__registration input[type="checkbox"] ~ label:before {
+	content: "";
+	position: absolute;
+	background: url("../img/chkbox.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    left: -6%;
+    top: 9%;
+}
+.form__registration input[type="checkbox"] ~ label:hover:before {
+	cursor: pointer;
+	opacity: 0.7;
+	left: -6%;
+    top: 9%;
+}
+.form__registration input[type="checkbox"]:checked ~ label:before {
+	content: "";
+	position: absolute;
+	background: url("../img/chkbox_marked.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    top: 9%;
+}
+.form__registration-submit:hover {
 	cursor: pointer;
 	color: #FDBD03;	
 	background-color: #303030;
