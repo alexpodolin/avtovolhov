@@ -1198,4 +1198,44 @@ a:hover {
 	opacity: 1;
 	border: none;
 }
+/*===Личный кабинет=================================================================*/
+.personal__area {
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+.personal__area-nav {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+.personal__area-ul {
+	margin: 0;
+	padding: 0;
+}
+.personal__area-ul-item {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #303030;	
+	background-color: #FDBD03;
+}
+.personal__area-link {
+
+}
+
+.personal__cabinet {
+	display: flex;
+	flex-direction: column;
+}
+.personal__cabinet-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.personal__cabinet-menu {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
 /*==================================================================================*/
