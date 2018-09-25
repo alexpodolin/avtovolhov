@@ -22,6 +22,9 @@
 
 .header__mini-nav { width: 310%; left: -176%; }
 .search__logout:before { top: 0%; right: 32%; }
+
+#last__items-list { width: 21%; top: 12%; right: 18%; }
+#last__items-list:before { left: 18.5px; }
 }
 
 @media only screen  and (max-width : 1767px) {
@@ -41,6 +44,8 @@
 .header__mini-nav { width: 300%; left: -162%; }
 .search__icon-search-mini { top: 0%; left: 96%; width: 45px; height: 45px; }
 .search__logout span { left: 37%; }
+
+#last__items-list { width: 22%; top: 11.5%; right: 18%; }
 }
 
 @media only screen  and (max-width : 1679px) {
@@ -90,6 +95,9 @@
 .search__logout { margin: 0.6% -1.5% 0 1%; }
 .search__logout:before { top: -1%; right: 33%; margin: 0.6% -1.5% 0 1%; }
 .search__logout span { position: absolute; left: 36%; }
+
+#last__items-list { width: 23%; top: 12%; right: 17%; }
+#last__items-list:before { left: 25.5px; }
 }
 
 @media only screen  and (max-width : 1599px) {
@@ -164,6 +172,9 @@
 .search__logout { width: 10%; height: 30px; margin: 0.6% 0 0 0.5%; border-radius: 12px; }
 .search__logout:before { width: 30px; height: 35px; top: 4%; right: 35%; }
 .search__logout span { font-size: 20px; left: 32%; }
+
+#last__items-list { width: 26%; top: 11.5%; right: 15%; }
+#last__items-list:before { top: -51px; left: 50.5px; width: 40px; }
 }
 
 @media only screen  and (max-width : 1439px) {
@@ -267,6 +278,9 @@
 
 .login__wrapper { margin: 10% 0 0 30%; }
 .registration__wrapper { margin: 10% 0 0 30%; }
+
+#last__items-list { width: 29%; top: 12%; right: 11%; }
+#last__items-list:before { top: -43px; left: 45px; width: 34px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
 }
 
 @media only screen  and (max-width : 1279px) {
@@ -341,7 +355,13 @@
 .search__logout { width: 14%; height: 26px; margin: 0 0 0 1%; border: 2px solid #303030; border-radius: 10px; }
 .search__logout:before { width: 28px; height: 30px; top: 0; left: -30%; }
 .search__logout span { font-size: 14px; left: 31%; }
-}
+
+#last__items-list { width: 25%; top: 11.5%; right: 15%; }
+#last__items-list:before { top: -36px; left: 37px; width: 28px; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+.last__items-header { font-size: 18px; }
+.last__items-product { align-items: flex-end; }
+.last__items-product-name { font-size: 14px; margin: 0; }
+.last__items-product-price, .last__items-tobasket { border-radius: 10px; font-size: 12px; }
 
 @media only screen  and (max-width : 1023px) {	
 .header__left_tagline { font-size: 28px; }
@@ -381,6 +401,10 @@
 
 .login__wrapper { margin: 10% 0 0 27%; } 
 .registration__wrapper { margin: 10% 0 0 27%; } 
+
+#last__items-list { width: 32%; top: 12%; right: 9%; }
+#last__items-list:before { top: -38px; left: 38px; width: 28px; }
+.last__items-product-name { margin: 1em; }
 }
 
 @media only screen  and (max-width : 959px) {
@@ -434,6 +458,13 @@
 
 .login__wrapper { margin: 10% 0 0 20%; }
 .registration__wrapper { margin: 10% 0 0 20%; }
+
+#last__items-list { width: 39%; top: 8%; right: 8%; }
+#last__items-list:before { top: -43px; left: 46px; width: 28px; }
+}
+
+@media only screen  and (width : 800px) { 
+	#last__items-list:before { right: 91px; }
 }
 
 @media only screen  and (max-width : 767px) {	
@@ -478,6 +509,9 @@
 
 .login__wrapper { margin: 10% 0 0 14%; }
 .registration__wrapper{ margin: 10% 0 0 14%; }
+
+#last__items-list { width: 47%; top: 5%; right: 4%; }
+#last__items-list:before { top: -37px; left: 42px; width: 27px; }
 }
 
 @media only screen  and (max-width : 639px) {
@@ -530,6 +564,13 @@
 
 .registration__wrapper { margin: 25% 0 0 3%; }
 .page__registration-close { right: -1.5%; }
+
+#last__items-list { width: 63%; top: 4%; right: 17%; }
+#last__items-list:before { top: -37px; left: auto; right: 59px; width: 33px; }
+}
+
+@media only screen  and (width : 800px) { 
+	#last__items-list:before { top: -35px; right: 52px; width: 36px; }
 }
 
 @media only screen  and (max-width : 479px) {
@@ -563,6 +604,9 @@
 .form__registration input[type="checkbox"] ~ label { margin: 0 0 0 7%; }
 .form__registration input[type="checkbox"] ~ label:before { left: -7%; }
 .form__registration input[type="checkbox"] ~ label:hover:before { left: -7%; }
+
+#last__items-list { width: 72%; top: 4%; right: 13%; }
+#last__items-list:before { top: -37px; left: auto; right: 77px; width: 33px; }
 }
 
 @media only screen  and (max-width : 415px) {	
@@ -585,6 +629,13 @@
 .login__wrapper-top { font-size: 16px; }
 .form__login input[type="checkbox"] ~ label:before { left: 16%; }
 .form__login input[type="checkbox"] ~ label:hover:before { left: 16%; }
+
+#last__items-list { width: 80%; top: 3.9%; right: 10%; }
+#last__items-list:before { top: -34px; right: 88px; width: 31px; }
+}
+
+@media only screen  and (width : 414px) { 
+	#last__items-list:before { right: 91px; }
 }
 
 @media only screen  and (max-width : 376px) {	
@@ -607,6 +658,13 @@
 .form__registration input[type="checkbox"] ~ label { margin: 0 0 0 8%; }
 .form__registration input[type="checkbox"] ~ label:before { left: -9%; }
 .form__registration input[type="checkbox"] ~ label:hover:before { left: -9%; }
+
+#last__items-list { width: 83%; top: 3.7%; right: 8%; }
+#last__items-list:before { top: -32px; right: 94px; }
+}
+
+@media only screen  and (width : 375px) { 
+	#last__items-list:before { right: 96px; }
 }
 
 @media only screen  and (max-width : 359px) {	
@@ -640,6 +698,9 @@
 .form__login_forget-passwd { margin: 0 0 0 17%; }
 
 .form__registration input { font-size: 14px; }
+
+#last__items-list { width: 94%; top: 3.5%; right: 3%; }
+#last__items-list:before { top: -32px; right: 108px; width: 30px; }
 }
 
 @media only screen  and (max-width : 319px) {	
