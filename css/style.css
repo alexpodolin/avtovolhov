@@ -1205,14 +1205,15 @@ a:hover {
 	display: flex;
 }
 .personal__area-nav {
-	display: flex;
-	flex-direction: column;
 	margin: 0;
 	padding: 0;
+	display: flex;
+    flex-basis: 11%;
 }
 .personal__area-ul {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 .personal__area-ul-item {
 	margin: 0;
@@ -1220,22 +1221,104 @@ a:hover {
 	list-style-type: none;
 	color: #303030;	
 	background-color: #FDBD03;
+	border-radius: 10px;
+	margin: 3% 0;
 }
 .personal__area-link {
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
 }
+.personal__area-link:hover {
+	color: #FDBD03;
+	background-color: #303030;
+	border-radius: 10px;
+}
+
 
 .personal__cabinet {
 	display: flex;
-	flex-direction: column;
+	flex-basis: 89%;
 }
 .personal__cabinet-wrapper {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+}
+.personal__cabinet-wrapper p {
+	margin: 1.5% 0 0.5% 0;
+	padding: 1% 5%;
+	border-radius: 20px;
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FDBD03;
+	background-color: #303030;
 }
 .personal__cabinet-menu {
 	display: flex;
-	flex-direction: column;
-	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 81%;
+}
+.personal__cabinet-link {
+	display: flex;
+	margin: 1% 1% 1% 1%;
+    position: relative;
+	/*border: 5px solid #303030;*/
+	border: 5px solid #000000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.personal__cabinet-link:hover {
+	filter: none;
+	opacity: 1;
+	color: #ffffff;
+}
+.personal__cabinet-img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.personal__cabinet_line {
+	position: absolute;
+	margin: 40% 0 0 0.3%;
+	width: 99.5%;
+}
+.personal__cabinet_icon {
+	position: absolute;
+	margin: 42% 0 0 6%;
+}
+.personal__cabinet_icon-car {
+	margin: 43% 0 0 6%;
+}
+.personal__cabinet_icon-cogwheel,
+.personal__cabinet_icon-magnifier {
+	margin: 41% 0 0 6%;
+}
+
+.personal__cabinet-name {
+	position: absolute;
+	font-size: 32px;
+}
+.personal__cabinet-name-basket {
+	margin: 44% 0 0 41%;
+}
+.personal__cabinet-name-car {
+	margin: 44% 0 0 29%;
+}
+.personal__cabinet-name-cogwheel {
+	margin: 44% 0 0 36%;
+}
+.personal__cabinet-name-magnifier,
+.personal__cabinet-name-setting {
+	margin: 44% 0 0 36%;
 }
 /*==================================================================================*/

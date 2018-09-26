@@ -56,49 +56,7 @@
 					<button type="submit" form="search" class="search__icon-search"></button>
 				</fieldset>
 			</form>
-			<button type="button" class="last__items" onclick="show_last_items();"></button>
-
-			<div id="last__items-list">
-				<div class="last__items-list-wrap">
-					<p class="last__items-header">Избранные и последние просмотренные товары</p>
-
-					<div class="last__items-product">
-						<img src="img/img_12_mini.jpg" class="last__items-foto-mini" alt="Штампованный диск">
-
-						<div class="last__items-product-data">
-							<p class="last__items-product-name">Штампованный диск колеса 8,25х22,5</p>
-							<span>
-								<strong class="last__items-product-price">2800 руб.</strong>
-								<button type="button" class="last__items-tobasket">Положить в корзину</button>
-							</span>
-						</div>
-					</div>
-
-					<div class="last__items-product">
-						<img src="img/img_10_mini.jpg" class="last__items-foto-mini" alt="Shell Helix Ultra">
-
-						<div class="last__items-product-data">
-							<p class="last__items-product-name">Shell Helix Ultra 5W-30</p>
-							<span>
-								<strong class="last__items-product-price">1900 руб.</strong>
-								<button type="button" class="last__items-tobasket">Положить в корзину</button>
-							</span>
-						</div>
-					</div>
-
-					<div class="last__items-product">
-						<img src="img/img_11_mini.jpg" class="last__items-foto-mini" alt="Стойка передняя Kayaba Hyundai Tucson">
-
-						<div class="last__items-product-data">
-							<p class="last__items-product-name">Стойка передняя Kayaba Hyundai Tucson</p>
-							<span>
-								<strong class="last__items-product-price">5300 руб.</strong>
-								<button type="button" class="last__items-tobasket">Положить в корзину</button>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<button type="button" class="last__items" onclick="show_last_items();"></button>			
 
 			<a href="#" class="search__basket"></a>
 			<a class="search__login" onclick="show_login_form();"><span>Вход</span></a>
@@ -110,6 +68,48 @@
 		<a href="#" class="header__right_insta" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></a>
 	</div>	
 </header>
+
+<div id="last__items-list">
+	<div class="last__items-list-wrap">
+		<p class="last__items-header">Избранные и последние просмотренные товары</p>
+
+		<div class="last__items-product">
+			<img src="img/img_12_mini.jpg" class="last__items-foto-mini" alt="Штампованный диск">
+
+			<div class="last__items-product-data">
+				<p class="last__items-product-name">Штампованный диск колеса 8,25х22,5</p>
+				<span>
+					<strong class="last__items-product-price">2800 руб.</strong>
+					<button type="button" class="last__items-tobasket">Положить в корзину</button>
+				</span>
+			</div>
+		</div>
+
+		<div class="last__items-product">
+			<img src="img/img_10_mini.jpg" class="last__items-foto-mini" alt="Shell Helix Ultra">
+
+			<div class="last__items-product-data">
+				<p class="last__items-product-name">Shell Helix Ultra 5W-30</p>
+				<span>
+					<strong class="last__items-product-price">1900 руб.</strong>
+					<button type="button" class="last__items-tobasket">Положить в корзину</button>
+				</span>
+			</div>
+		</div>
+
+		<div class="last__items-product">
+			<img src="img/img_11_mini.jpg" class="last__items-foto-mini" alt="Стойка передняя Kayaba Hyundai Tucson">
+
+			<div class="last__items-product-data">
+				<p class="last__items-product-name">Стойка передняя Kayaba Hyundai Tucson</p>
+				<span>
+					<strong class="last__items-product-price">5300 руб.</strong>
+					<button type="button" class="last__items-tobasket">Положить в корзину</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="header__mini" id="header__mini-show" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header__mini-leftlogo">
@@ -152,80 +152,152 @@
 		<nav class="personal__area-nav">
 			<ul class="personal__area-ul">
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link"><img src="img/gear.png" alt="Автозапчасти">Автозапчасти</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/gear.png" alt="Автозапчасти">
+						<span>Автозапчасти</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Масла и автохимия</a>
+					<a href="#" class="personal__area-link">
+						<img class="qwe" src="img/jerrycan.png" alt="Масла и автохимия">
+						<span>Масла и автохимия</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Шины и диски</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/wheel.png" alt="Шины и диски">
+						<span>Шины и диски</span></a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Аксессуары</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/accessories.png" alt="Аксессуары">
+						<span>Аксессуары</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Инструменты</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/instruments.png" alt="Инструменты">
+						<span>Инструменты</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Аккумуляторы</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/accumulators.png" alt="Аккумуляторы">
+						<span>Аккумуляторы</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Автостекла</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/autoglass.png" alt="Автостекла">
+						<span>Автостекла</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Кузовные детали</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/parts.png" alt="Кузовные детали">
+						<span>Кузовные детали</span>
+					</a>
 				</li>
 
 				<li class="personal__area-ul-item">
-					<a href="#" class="personal__area-link">Автокрепеж</a>
+					<a href="#" class="personal__area-link">
+						<img src="img/auto_fastening.png" alt="Автокрепеж">
+						<span>Автокрепеж</span>
+					</a>
 				</li>
 			</ul>	
 		</nav>
 
 		<div class="personal__cabinet">
-			<div class="personal__cabinet-wrapper">
-				<p>Ваш личный кабинет</p>
-				<div class="personal__cabinet-menu">
+			<div class="personal__cabinet-wrapper">	
+				<p>Ваш личный кабинет</p>			
+				<div class="personal__cabinet-menu">				
 					<a href="#" class="personal__cabinet-link">		
 						<img src="img/img_15.jpg" class="personal__cabinet-img" alt="корзина">	
-						<img src="img/basket.png" class="personal__cabinet_icon-basket" alt="корзина">	
-						<span class="personal__cabinet-name">Корзина</span>							
+						<img src="img/stock_line.png" class="personal__cabinet_line" alt="линия">
+						<img src="img/basket.png" class="personal__cabinet_icon" alt="корзина">	
+						<span class="personal__cabinet-name personal__cabinet-name-basket">Корзина</span>							
 					</a>
 
 					<a href="#" class="personal__cabinet-link">		
 						<img src="img/img_14.jpg" class="personal__cabinet-img" alt="автомобили">	
-						<img src="img/basket.png" class="personal__cabinet_icon-cars" alt="автомобили">	
-						<span class="personal__cabinet-name">Мои автомобили</span>							
+						<img src="img/stock_line.png" class="personal__cabinet_line" alt="линия">
+						<img src="img/car.png" class="personal__cabinet_icon personal__cabinet_icon-car" alt="автомобили">	
+						<span class="personal__cabinet-name personal__cabinet-name-car">Мои автомобили</span>							
 					</a>
 
 					<a href="#" class="personal__cabinet-link">		
-						<img src="img/img_16.jpg" class="personal__cabinet-img" alt="заказы">	
-						<img src="img/cogwheel.png" class="personal__cabinet_icon-cars" alt="заказы">	
-						<span class="personal__cabinet-name">Мои заказы</span>							
+						<img src="img/img_16.jpg" class="personal__cabinet-img" alt="заказы">
+						<img src="img/stock_line.png" class="personal__cabinet_line" alt="линия">	
+						<img src="img/cogwheel.png" class="personal__cabinet_icon personal__cabinet_icon-cogwheel" alt="заказы">	
+						<span class="personal__cabinet-name personal__cabinet-name-cogwheel">Мои заказы</span>							
 					</a>
 
 					<a href="#" class="personal__cabinet-link">		
 						<img src="img/img_13.jpg" class="personal__cabinet-img" alt="запчасти">	
-						<img src="img/magnifier.png" class="personal__cabinet_icon-magnifier" alt="запчасти">	
-						<span class="personal__cabinet-name">Мои заказы</span>							
+						<img src="img/stock_line.png" class="personal__cabinet_line" alt="линия">
+						<img src="img/magnifier.png" class="personal__cabinet_icon personal__cabinet_icon-magnifier" alt="запчасти">	
+						<span class="personal__cabinet-name personal__cabinet-name-magnifier">Мои заказы</span>							
 					</a>
 
 					<a href="#" class="personal__cabinet-link">		
-						<img src="img/img_17.jpg" class="personal__cabinet-img" alt="настройки">	
-						<img src="img/setting.png" class="personal__cabinet_icon-setting" alt="настройки">	
-						<span class="personal__cabinet-name">Настройки</span>							
+						<img src="img/img_17.jpg" class="personal__cabinet-img" alt="настройки">
+						<img src="img/stock_line.png" class="personal__cabinet_line" alt="линия">	
+						<img src="img/setting.png" class="personal__cabinet_icon" alt="настройки">	
+						<span class="personal__cabinet-name personal__cabinet-name-setting">Настройки</span>							
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>	
+
+	<div class="main__bottom_menu">
+		<div class="main__bottom_menu-container">
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Информация</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">О нас</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Помощь</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Цены и скидки</a></li>
+				</ul>
+			</div>
+
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Служба поддержки</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Обратная связь</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Возврат товара</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Книга отзывов</a></li>
+				</ul>
+			</div>
+
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Дополнительно</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Акции</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Производители</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Партнерская программа</a></li>
+				</ul>
+			</div>
+
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Личный кабинет</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Закладки</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">История заказов</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Настройки пользователя</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 </main>
 
 <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
