@@ -150,8 +150,8 @@ a:hover {
 	content: "";
 	position: absolute;
 	width: 19%;
-    top: 11.5%;
-    right: 20%;
+    top: 172px;
+    right: 381px;
 	background-color: #303030;
 	border-radius: 20px;  
 	z-index: 200;

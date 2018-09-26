@@ -45,7 +45,7 @@
 .search__icon-search-mini { top: 0%; left: 96%; width: 45px; height: 45px; }
 .search__logout span { left: 37%; }
 
-#last__items-list { width: 22%; top: 11.5%; right: 18%; }
+#last__items-list { width: 22%; top: 166px; right: 302px; }
 }
 
 @media only screen  and (max-width : 1679px) {
@@ -96,7 +96,7 @@
 .search__logout:before { top: -1%; right: 33%; margin: 0.6% -1.5% 0 1%; }
 .search__logout span { position: absolute; left: 36%; }
 
-#last__items-list { width: 23%; top: 12%; right: 17%; }
+#last__items-list { width: 23%; top: 167px; right: 272px; }
 #last__items-list:before { left: 25.5px; }
 }
 
@@ -173,7 +173,7 @@
 .search__logout:before { width: 30px; height: 35px; top: 4%; right: 35%; }
 .search__logout span { font-size: 20px; left: 32%; }
 
-#last__items-list { width: 26%; top: 11.5%; right: 15%; }
+#last__items-list { width: 26%; top: 130px; right: 216px;; }
 #last__items-list:before { top: -51px; left: 50.5px; width: 40px; }
 }
 
@@ -201,6 +201,8 @@
 .header__mini-nav { left: -177%; }
 .header__mini-link { padding: 5% 0 1% 15%; }
 .search__icon-search-mini { top: 3%; left: 97.5%; }
+
+#last__items-list { width: 26%; top: 130px; right: 212px; }
 }
 
 @media only screen  and (max-width : 1399px) {
@@ -279,8 +281,8 @@
 .login__wrapper { margin: 10% 0 0 30%; }
 .registration__wrapper { margin: 10% 0 0 30%; }
 
-#last__items-list { width: 29%; top: 12%; right: 11%; }
-#last__items-list:before { top: -43px; left: 45px; width: 34px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+#last__items-list { width: 29%; top: 124px; right: 138px; }
+#last__items-list:before { top: -45px; left: 45px; width: 34px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
 
 .personal__area-link { font-size: 14px; line-height: 16px; text-align: center; }
 }
@@ -358,7 +360,7 @@
 .search__logout:before { width: 28px; height: 30px; top: 0; left: -30%; }
 .search__logout span { font-size: 14px; left: 31%; }
 
-#last__items-list { width: 25%; top: 11.5%; right: 15%; }
+#last__items-list { width: 25%; top: 93px; right: 154px; }
 #last__items-list:before { top: -36px; left: 37px; width: 28px; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 .last__items-header { font-size: 18px; }
 .last__items-product { align-items: flex-end; }
