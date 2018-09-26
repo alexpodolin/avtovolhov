@@ -1236,6 +1236,12 @@ a:hover {
 	border-radius: 10px;
 }
 
+.personal__area-link-hover {
+	display: none;
+}
+
+
+
 
 .personal__cabinet {
 	display: flex;
