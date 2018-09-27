@@ -867,6 +867,7 @@ a:hover {
 	position: absolute;
 	background: url("../img/background.png") no-repeat;
 	background-size: cover;
+	z-index: 400;
 }
 .login__wrapper {
     position: fixed;
@@ -1035,6 +1036,7 @@ a:hover {
 	position: absolute;
 	background: url("../img/background.png") no-repeat;
 	background-size: cover;
+	z-index: 400;
 }
 .page__registration-close {
 	content: "";
@@ -1049,7 +1051,7 @@ a:hover {
     height: 25px;
 }
 .registration__wrapper {
-	position: fixed;
+	position: absolute;
     margin: 10% 0 0 35%;
     background-color: #ffffff;
     border: 5px solid #303030;
