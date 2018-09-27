@@ -573,12 +573,7 @@ tbody, th, td, tr { display: flex; flex-direction: column; }
 tr { margin: 0 0 0 0; }
 tr:nth-child(odd) { background-color: #FFF7AE; }
 /*поведение как "ряд"*/
-td {	
-	border: none;
-	border-bottom: 1px solid #468899;
-	position: relative;
-	padding-left: 50%;
-}
+td { border: none; border-bottom: 1px solid #468899; position: relative; padding-left: 50%; }
 /*теперь как заголовок таблицы*/
 /* Верхние / левые значения отступов заголовка */
 td:before {	
@@ -594,7 +589,6 @@ td:nth-of-type(1):before { content: "Производитель"; }
 td:nth-of-type(2):before { content: "Номер"; }
 td:nth-of-type(3):before { content: "Наименование"; }
 td:nth-of-type(4):before { content: "Цена"; }
-
 .search__table td:first-child, 
 .search__table td:nth-child(2), 
 .search__table td:nth-child(3),
@@ -604,12 +598,8 @@ td:nth-of-type(4):before { content: "Цена"; }
     font-size: 16px;
     line-height: 24px;
 }
-.search__table tr:nth-child(odd):hover {
-	background-color: #FFF7AE !important;
-}
-.search__table tr:nth-child(even):hover {
-	background-color: transparent !important;
-}
+.search__table tr:nth-child(odd):hover { background-color: #FFF7AE !important; }
+.search__table tr:nth-child(even):hover { background-color: transparent !important; }
 }
 
 
@@ -672,8 +662,16 @@ td:nth-of-type(4):before { content: "Цена"; }
 .personal__cabinet { flex-basis: 78%; }
 .personal__cabinet-img { height: 205px; }
 .personal__cabinet_icon { width: 11%; }
-}
 
+.search__result-wrapper p { font-size: 14px; }
+.search__table td:first-child, 
+.search__table td:nth-child(2), 
+.search__table td:nth-child(3), 
+.search__table td:last-child {
+    font-size: 14px;
+}
+td:before { font-size: 14px; }
+}
 @media only screen  and (width : 600px) { 
 	.search__icon-search { top: 7%; left: 93%; width: 30px; height: 30px; }
 	#last__items-list { top: 123px; right: 102px; }
@@ -738,6 +736,17 @@ td:nth-of-type(4):before { content: "Цена"; }
 .personal__cabinet-name-magnifier, 
 .personal__cabinet-name-setting {
     margin: 41% 0 0 36%; }
+
+.search__result-wrapper p { padding: 2.05% 8%; }
+.search__table td:first-child, 
+.search__table td:nth-child(2), 
+.search__table td:nth-child(3), 
+.search__table td:last-child {
+    font-size: 12px;
+    line-height: 16px; 
+    padding: 1% 1% 1% 37%;
+}
+td:before { font-size: 12px; left: 3%; }
 }
 
 @media only screen  and (max-width : 415px) {	
@@ -771,8 +780,13 @@ td:nth-of-type(4):before { content: "Цена"; }
 .personal__cabinet-name-car { margin: 41% 0 0 29%; }
 .personal__cabinet-name-cogwheel { margin: 41% 0 0 36%; }
 .personal__cabinet-name-magnifier, 
-.personal__cabinet-name-setting {
-    margin: 41% 0 0 36%; }
+.personal__cabinet-name-setting { margin: 41% 0 0 36%; }
+
+.search__table td:first-child, 
+.search__table td:nth-child(2), 
+.search__table td:nth-child(3), 
+.search__table td:last-child { padding: 1% 1% 1% 40%; }
+td:before { left: 2%; }
 }
 
 @media only screen  and (width : 414px) { 
@@ -806,6 +820,14 @@ td:nth-of-type(4):before { content: "Цена"; }
 
 .personal__cabinet-wrapper p {  font-size: 16px; }
 .personal__cabinet-name { font-size: 16px; }
+
+.search__table td:first-child, 
+.search__table td:nth-child(2), 
+.search__table td:nth-child(3), 
+.search__table td:last-child {
+    padding: 11% 1% 1% 3%; 
+}
+td:before { left: 3%; }
 }
 
 @media only screen  and (width : 375px) { 
@@ -850,6 +872,14 @@ td:nth-of-type(4):before { content: "Цена"; }
 
 .personal__area { display: flex; flex-direction: column; }
 .personal__area-link { padding: 1%; }
+
+.search__table td:first-child, 
+.search__table td:nth-child(2), 
+.search__table td:nth-child(3), 
+.search__table td:last-child {
+    padding: 10% 2% 1% 3%;
+}
+td:before { font-size: 14px; }
 }
 
 @media only screen  and (max-width : 319px) {	

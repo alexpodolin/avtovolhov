@@ -1352,6 +1352,7 @@ a:hover {
     margin: 0.5% 1%;
     background-color: #FFFFFF;
     border-collapse: collapse;   
+    width: 98%;
 }
 .search__table_header {
 	background-color: #FDBD03;
@@ -1381,4 +1382,5 @@ a:hover {
 .search__table thead tr:hover {
 	background-color: transparent;
 }
+/*===Вывод поиска, результат больше 30 =============================================*/
 /*==================================================================================*/
