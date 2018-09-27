@@ -98,6 +98,10 @@
 
 #last__items-list { width: 23%; top: 167px; right: 272px; }
 #last__items-list:before { left: 25.5px; }
+
+.search__result-wrapper p { font-size: 40px; }
+.search__table_header-name { font-size: 24px; }
+.search__table td { font-size: 20px; }
 }
 
 @media only screen  and (max-width : 1599px) {
@@ -285,6 +289,10 @@
 #last__items-list:before { top: -45px; left: 45px; width: 34px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
 
 .personal__area-link { font-size: 14px; line-height: 16px; text-align: center; }
+
+.search__result-wrapper p { font-size: 32px; }
+.search__table_header-name { font-size: 20px; }
+.search__table td { font-size: 18px; }
 }
 
 @media only screen  and (max-width : 1279px) {
@@ -368,12 +376,18 @@
 .last__items-product-price, .last__items-tobasket { border-radius: 10px; font-size: 12px; }
 
 .personal__cabinet-menu {  width: 100%; }
+
+.search__result-wrapper p { font-size: 24px; }
+.search__table_header-name:first-child { width: 17%; }
+.search__table_header-name:nth-child(2) { width: 9%; }
+.search__table_header-name:last-child { width: 12%; }
 }
 
 @media only screen  and (max-width : 1023px) {	
 .header__left_tagline { font-size: 28px; }
 .header__main_tagline { font-size: 34px; }
 .search { margin: -6% 0 0 3.5%; }
+.search__icon-search { left: 95%; }
 .header__right_tagline { font-size: 28px; }
 .header__right_insta { margin: 4% 0 0 8%; }
 .main__menu { padding: 1% 2% 0 2%; margin: 0 0 0 0; }
@@ -417,6 +431,10 @@
 .personal__area-link { font-size: 16px; line-height: 24px; }
 .personal__cabinet { flex-basis: 84%; }
 .personal__cabinet-wrapper p { margin: 4% 0; }
+
+.search__result-wrapper p { margin: 0.5% 0 0.5% 0; }
+.search__table_header-name { font-size: 18px; }
+.search__table td { font-size: 16px; }
 }
 
 @media only screen  and (max-width : 959px) {
@@ -476,6 +494,13 @@
 
 .personal__area-nav { flex-basis: 20%; }
 .personal__cabinet { flex-basis: 80%; }
+
+.search__result-wrapper p { font-size: 18px; }
+.search__table_header-name { font-size: 16px; }
+.search__table_header-name:first-child { width: 19%; }
+.search__table_header-name:last-child { width: 13%; }
+.search__table td { font-size: 14px; }
+.search__table td:nth-child(3) { line-height: 16px; }
 }
 
 @media only screen  and (width : 800px) { 
@@ -537,7 +562,56 @@
 
 .personal__area-nav { flex-basis: 25%; }
 .personal__cabinet { flex-basis: 75%; }
+
+.search__result-wrapper p { font-size: 16px; }
+/*таблица перестет быть таблицей*/
+.search__table, 
+.search__table_header, 
+tbody, th, td, tr { display: flex; flex-direction: column; }
+/*спрячем заголовки (but not display: none;)*/
+.search__table_header tr { position: absolute; top: -9999px; left: -9999px; }
+tr { margin: 0 0 0 0; }
+tr:nth-child(odd) { background-color: #FFF7AE; }
+/*поведение как "ряд"*/
+td {	
+	border: none;
+	border-bottom: 1px solid #468899;
+	position: relative;
+	padding-left: 50%;
 }
+/*теперь как заголовок таблицы*/
+/* Верхние / левые значения отступов заголовка */
+td:before {	
+	position: absolute;	
+	top: 15%;
+	left: 5%;
+	width: 6%;
+	white-space: nowrap;
+	font-size: 16px;
+	font-weight: bold;
+}
+td:nth-of-type(1):before { content: "Производитель"; }
+td:nth-of-type(2):before { content: "Номер"; }
+td:nth-of-type(3):before { content: "Наименование"; }
+td:nth-of-type(4):before { content: "Цена"; }
+
+.search__table td:first-child, 
+.search__table td:nth-child(2), 
+.search__table td:nth-child(3),
+.search__table td:last-child {
+    text-align: left;
+    padding: 1% 1% 1% 35%;
+    font-size: 16px;
+    line-height: 24px;
+}
+.search__table tr:nth-child(odd):hover {
+	background-color: #FFF7AE !important;
+}
+.search__table tr:nth-child(even):hover {
+	background-color: transparent !important;
+}
+}
+
 
 @media only screen  and (max-width : 639px) {
 .header { display: flex; flex-direction: column; align-items: center; height: 175px; }

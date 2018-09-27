@@ -1051,7 +1051,7 @@ a:hover {
     height: 25px;
 }
 .registration__wrapper {
-	position: absolute;
+	position: fixed;
     margin: 10% 0 0 35%;
     background-color: #ffffff;
     border: 5px solid #303030;
@@ -1237,14 +1237,9 @@ a:hover {
 	background-color: #303030;
 	border-radius: 10px;
 }
-
 .personal__area-link-hover {
 	display: none;
 }
-
-
-
-
 .personal__cabinet {
 	display: flex;
 	flex-basis: 89%;
@@ -1311,7 +1306,6 @@ a:hover {
 .personal__cabinet_icon-magnifier {
 	margin: 41% 0 0 6%;
 }
-
 .personal__cabinet-name {
 	position: absolute;
 	font-size: 32px;
@@ -1328,5 +1322,63 @@ a:hover {
 .personal__cabinet-name-magnifier,
 .personal__cabinet-name-setting {
 	margin: 44% 0 0 36%;
+}
+/*===Вывод поиска, результат меньше 30 =============================================*/
+.search__result {
+	display: flex;
+	flex-basis: 89%;
+}
+.search__result-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 1%;
+}
+.search__result-wrapper p {
+	border-radius: 15px;
+	font-size: 48px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FDBD03;
+	background-color: #303030;
+	padding: 2.05% 0;
+    margin: 0.3% 0 0 0;
+}
+.search__table, th, td {
+	border: 1px solid #468899;
+}
+.search__table {
+    margin: 0.5% 1%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;   
+}
+.search__table_header {
+	background-color: #FDBD03;
+}
+.search__table_header-name {
+	font-size: 32px;
+	font-weight: normal;
+	text-align: center;
+	padding: 1% 0
+}
+.search__table td {
+    font-size: 24px;
+    font-weight: normal;
+}
+.search__table td:first-child,
+.search__table td:nth-child(2),
+.search__table td:last-child {
+	text-align: center;
+	padding: 1% 0;
+}
+.search__table td:nth-child(3) {
+	padding: 1% 1% 1% 1%;
+}
+.search__table tr:hover {
+	background-color: #FFF7AE;
+}
+.search__table thead tr:hover {
+	background-color: transparent;
 }
 /*==================================================================================*/
