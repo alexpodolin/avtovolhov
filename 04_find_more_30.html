@@ -249,18 +249,29 @@
 				</table>
 
 				<div class="pagination__wrapper">
-					<div class="pagination__menu">
+					<div class="pagination__menu">					
 						<a href="#" class="pagination__menu-back">Назад</a>
 						<a href="#" class="pagination__menu-num">1</a>
-						<a href="#" class="pagination__menu-num">1</a>
+						<a href="#" class="pagination__menu-num">2</a>
 						<a href="#" class="pagination__menu-forward">Вперед</a>
 					</div>
 
-					<form class=pagination__form"">
-						
-					</form>
-				</div>
-				
+					<div class="pagination__form">
+					<p>Отображать:</p>
+						<form>
+							<fieldset>
+								<legend></legend>		
+								<label for="pagination__select" class="pagination__select-cust">			
+									<select id="pagination__select">
+										<option value="30" label="30" selected>30</option>
+										<option value="50" label="50">50</option>
+										<option value="100" label="100">100</option>
+									</select>	
+								</label>
+							</fieldset>						
+						</form>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</div>	

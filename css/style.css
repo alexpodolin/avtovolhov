@@ -1371,11 +1371,14 @@ a:hover {
 .search__table td:nth-child(2),
 .search__table td:last-child {
 	text-align: center;
-	padding: 1% 0;
+	padding: 1% 0%;
 }
 .search__table td:nth-child(3) {
 	padding: 1% 1% 1% 1%;
 }
+.search__table td:last-child {
+	padding: 1% 0.5%;
+} 
 .search__table tr:hover {
 	background-color: #FFF7AE;
 }
@@ -1383,4 +1386,104 @@ a:hover {
 	background-color: transparent;
 }
 /*===Вывод поиска, результат больше 30 =============================================*/
+.pagination__wrapper {
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-between;
+	align-items: center;
+	margin: 1% 1% 0 1%;
+}
+.pagination__menu {
+	display: flex;
+	align-items: center;
+	width: 22%;
+    padding: 0 0 0 39%;
+}
+.pagination__menu-back,
+.pagination__menu-forward {
+	color: #ffffff;
+	font-size: 24px;
+}
+.pagination__menu-back {
+	margin: 0 5% 0 0;
+}
+.pagination__menu-forward { 
+	margin: 0 0 0 5%; 
+}
+.pagination__menu-back:hover,
+.pagination__menu-forward:hover {
+	text-decoration: underline;
+}
+.pagination__menu-num {
+	font-size: 24px;
+	font-weight: lighter;
+	color: #000000;
+	border: 2px solid #303030;
+	border-radius: 12px;
+	padding: 5px 12px;
+	margin: 0 1%;
+	background-color: #ffffff;
+}
+.pagination__menu-num:hover {
+	background-color: #FDBD03;	
+	opacity: 1;
+}
+.pagination__form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pagination__form p {
+	background-color: transparent;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 24px !important;
+}
+.pagination__form form {
+	padding: 0 0 0 5%;
+}
+.pagination__form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.pagination__form legend {
+	display: none;
+}
+.pagination__select-cust {
+	position: relative;
+	display: flex;
+	border: 2px solid #303030;
+	border-radius: 15px;
+	background-color: #FFFFFF;
+	z-index: 10;
+	width: 100%;
+	overflow: hidden;
+}
+.pagination__form select {
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 3px 40px 3px 10px;
+	font-size: 24px;
+	font-weight: lighter;
+	color: #000000;
+}
+
+#pagination__select option {
+	font-weight: lighter;
+}
+.pagination__select-cust:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 37px;
+	height: 37px;
+	border-left: 2px solid #303030;
+	background: url("../img/chkbox_marked.png") transparent no-repeat;
+	background-size: contain;
+	z-index: -1;
+}
 /*==================================================================================*/
