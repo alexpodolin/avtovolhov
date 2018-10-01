@@ -1232,13 +1232,20 @@ a:hover {
 	align-items: center;
 	padding: 5%;
 }
+.personal__area-link-hover {
+	display: none;
+}
 .personal__area-link:hover {
 	color: #FDBD03;
 	background-color: #303030;
 	border-radius: 10px;
 }
-.personal__area-link-hover {
+.personal__area-link:hover > .personal__area-link-img { 
 	display: none;
+}
+.personal__area-link:hover > .personal__area-link-hover { 
+	display: flex
+	
 }
 .personal__cabinet {
 	display: flex;
