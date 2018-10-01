@@ -1476,21 +1476,93 @@ a:hover {
 	font-size: 24px;
 	font-weight: lighter;
 	color: #000000;
+	border: none;
 }
-
 #pagination__select option {
 	font-weight: lighter;
+}
+.pagination__select-cust:before {
+	content: "";
+	position: absolute;
+	right: 40px;
+	top: 0;
+	width: 0;
+	height: 33px;
+	border-left: 2px solid #303030;
+	background-size: contain;
+	z-index: -1;
 }
 .pagination__select-cust:after {
 	content: "";
 	position: absolute;
-	right: 0;
-	top: 0;
-	width: 37px;
-	height: 37px;
-	border-left: 2px solid #303030;
-	background: url("../img/chkbox_marked.png") transparent no-repeat;
+	right: 12px;
+	top: 8px;
+	width: 23px;
+	height: 21px;
+	background: url("../img/arrow.png") transparent no-repeat;
 	background-size: contain;
 	z-index: -1;
 }
-/*==================================================================================*/
+/*===Вывод поиска, окончательный результат==========================================*/
+.search__result-fin {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 87%;
+}
+.search__result-wrapper-fin {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 1%;
+}
+.search__result-wrapper-fin p {
+	border-radius: 15px;
+	font-size: 48px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FDBD03;
+	background-color: #303030;
+	padding: 2.05% 0;
+    margin: 0.3% 0 0 0;
+}
+.search__table-fin {
+    margin: 0.5% 1%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;   
+    width: 98%;
+    border: 1px solid #468899;
+}
+.search__table_header-fin {
+	background-color: #FDBD03;
+}
+.search__table_header-name-fin {
+	font-size: 32px;
+	font-weight: normal;
+	text-align: center;
+	padding: 1% 0;
+}
+.search__table-fin td {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding: 1% 0%;
+}
+.search__table-fin .search__table-row-desc {
+	text-align: left;
+	padding: 1% 0.5%;
+}
+.search__table-fin .search__table-row-price {
+	text-align: center;
+	padding: 1% 0.5%;
+}
+.search__table-fin tr:hover {
+	background-color: #FFF7AE;
+}
+.search__table-fin thead tr:hover {
+	background-color: transparent;
+}
+/*===Корзина с заказом==============================================================*/
+/*===Сам заказ======================================================================*/
+/*===Оплата и доставка==============================================================*/
+/*===Заказ оформлен=================================================================*/

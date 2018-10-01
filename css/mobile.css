@@ -294,6 +294,8 @@
 .search__table_header-name { font-size: 20px; }
 .search__table td { font-size: 18px; }
 
+
+
 .pagination__menu { width: 28%; padding: 0 0 0 35%; }
 .pagination__menu-back, 
 .pagination__menu-num,
@@ -303,7 +305,8 @@
     font-size: 20px !important;
 }
 #pagination__select option { font-size: 16px; }
-.pagination__select-cust:after { width: 30px; height: 30px; }
+.pagination__select-cust:before { right: 31px; }
+.pagination__select-cust:after { width: 20px; height: 15px; right: 8px; top: 7px; }
 }
 
 @media only screen  and (max-width : 1279px) {
@@ -455,6 +458,8 @@
     font-size: 16px !important; 
 }
 .pagination__menu-num { border-radius: 8px; padding: 0px 8px; }
+.pagination__select-cust:before { right: 30px; }
+.pagination__select-cust:after { right: 6px; top: 5px; }
 }
 
 @media only screen  and (max-width : 959px) {
@@ -637,6 +642,8 @@ td:nth-of-type(4):before { content: "Цена"; }
     font-size: 14px !important; 
 }
 .pagination__form{ margin: 1% 1% 0 0; }
+.pagination__select-cust:before { right: 26px; }
+.pagination__select-cust:after { right: 4px; top: 4px; }
 }
 
 
@@ -713,6 +720,7 @@ td:before { font-size: 14px; }
 }
 @media only screen  and (width : 600px) { 
 	.search__icon-search { top: 7%; left: 93%; width: 30px; height: 30px; }
+	.search__icon-search-mini { top: 5%; left: 92%; width: 22px; height: 25px; }
 	#last__items-list { top: 123px; right: 102px; }
 	#last__items-list:before { top: -35px; right: 52px; width: 36px; }
 	.login__wrapper { margin: 23% 0 0 10%; }
@@ -796,6 +804,8 @@ td:before { font-size: 12px; left: 3%; }
     font-size: 12px !important; 
 }
 .pagination__form p { padding: 5px 5px; }
+.pagination__select-cust:before { right: 22px; }
+.pagination__select-cust:after { width: 14px; height: 12px; right: 6px; top: 4px; }
 }
 
 @media only screen  and (max-width : 415px) {	
