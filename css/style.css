@@ -1537,24 +1537,24 @@ a:hover {
 	background-color: #FDBD03;
 }
 .search__table_header-name-fin {
-	font-size: 32px;
+	font-size: 29px;
 	font-weight: normal;
 	text-align: center;
-	padding: 1% 0;
+	padding: 1% 0.5%;
 }
 .search__table-fin td {
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    padding: 1% 0%;
+    padding: 1% 0.5%;
 }
 .search__table-fin .search__table-row-desc {
 	text-align: left;
-	padding: 1% 0.5%;
+
 }
 .search__table-fin .search__table-row-price {
 	text-align: center;
-	padding: 1% 0.5%;
+
 }
 .search__table-fin tr:hover {
 	background-color: #FFF7AE;

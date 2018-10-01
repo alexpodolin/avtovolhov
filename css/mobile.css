@@ -25,6 +25,9 @@
 
 #last__items-list { width: 21%; top: 12%; right: 18%; }
 #last__items-list:before { left: 18.5px; }
+
+.search__result-wrapper-fin p { font-size: 40px; }
+.search__table_header-name-fin { font-size: 24px; }
 }
 
 @media only screen  and (max-width : 1767px) {
