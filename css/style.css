@@ -1487,7 +1487,7 @@ a:hover {
 	right: 40px;
 	top: 0;
 	width: 0;
-	height: 33px;
+	height: 40px;
 	border-left: 2px solid #303030;
 	background-size: contain;
 	z-index: -1;
@@ -1523,7 +1523,7 @@ a:hover {
 	text-align: center;
 	color: #FDBD03;
 	background-color: #303030;
-	padding: 2.05% 0;
+	padding: 2% 0;
     margin: 0.3% 0 0 0;
 }
 .search__table-fin {
@@ -1537,7 +1537,7 @@ a:hover {
 	background-color: #FDBD03;
 }
 .search__table_header-name-fin {
-	font-size: 29px;
+	font-size: 32px;
 	font-weight: normal;
 	text-align: center;
 	padding: 1% 0.5%;
@@ -1550,17 +1550,87 @@ a:hover {
 }
 .search__table-fin .search__table-row-desc {
 	text-align: left;
-
 }
 .search__table-fin .search__table-row-price {
 	text-align: center;
-
 }
 .search__table-fin tr:hover {
 	background-color: #FFF7AE;
 }
 .search__table-fin thead tr:hover {
 	background-color: transparent;
+}
+.search__table-row-info > div {
+	display: flex;	
+	justify-content: center;
+}
+.search__table-info img {
+    border: 2px solid #303030;
+    border-radius: 15px;
+    padding: 2px 15px;
+    margin: 0 1px 0 0;
+}
+.search__table-foto img {
+    border: 2px solid #303030;
+    border-radius: 15px;
+    padding: 5px 5px;
+    margin: 0 0 0 1px;
+}
+.search__table-row-cart > div {
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+}
+.search__table-count {
+	position: relative;
+	padding: 0 33px;
+    border: 2px solid #303030;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    margin: 0 1px 0 0;
+}
+.search__table-count:before {
+	position: absolute;
+    content: "";
+    top: 45%;
+    left: 10%;
+    background: url("../img/minus.png") transparent no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 3px;
+}
+.search__table-count:after {
+	position: absolute;
+    content: "";
+    top: 20%;
+    right: 10%;
+    background: url("../img/plus.png") transparent no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+.search__table-count:hover:before,
+.search__table-count:hover:after {
+	cursor: pointer;
+}
+.search__table-count span {
+	padding: 0 10px;
+	border-left: 2px solid #303030;
+	border-right: 2px solid #303030;
+}
+.search__table-count:hover {
+	opacity: 1;
+}
+.search__table-basket {
+	margin: 0 0 0 1px;
+	position: relative;
+}
+.search__table-basket span {
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    font-size: 14px;
+    font-style: italic;
 }
 /*===Корзина с заказом==============================================================*/
 /*===Проверка заказа================================================================*/
@@ -1574,6 +1644,7 @@ a:hover {
 	width: 100%;
 	margin: 0 1%;
 }
+
 .order__result-header {
 	display: flex;
 	flex-direction: row;
@@ -1585,24 +1656,26 @@ a:hover {
 	color: #FDBD03;
 	background-color: #303030;
 	padding: 0 5%;
-    margin: 4% 0 0 0;
+    margin: 3% 0 0 0;
 }
 .order__result-header-img {
 	position: absolute;	
-	width: 250px;
-	height: 250px;
 	box-sizing: border-box;
 	border-radius: 50%;
-	border: 5px solid #000000;
-	top: -47%;
+	border: 5px solid #303030;
+	top: -37%;
 	left: 20%;   
 }
 .order__table {
-    margin: 5% 1% 0.5% 1%;
+    margin: 55px 1% 27px 1%;
     background-color: #FFFFFF;
     border-collapse: collapse;   
     width: 98%;
     border: 1px solid #468899;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding: 1% 0.5%;
 }
 .order__table_header {
 	background-color: #FDBD03;
@@ -1612,12 +1685,6 @@ a:hover {
 	font-weight: normal;
 	text-align: center;
 	padding: 1% 0.5%;
-}
-.order__table {
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-    padding: 1% 0.5%;
 }
 .order__table-row-desc {
 	text-align: left;	
@@ -1660,33 +1727,46 @@ a:hover {
 	height: 20px;
     width: 20px;    
 }
-.search__table-count {
+.order__table-count {
 	position: relative;
-	padding: 0 30%;
-    border: 3px solid #000000;
-    border-radius: 15px;
+	padding: 0 25%;
+    border: 2px solid #303030;
+    border-radius: 12px;
     background-color: #FFFFFF;
 }
-.search__table-count:before {
+.order__table-count:before {
 	position: absolute;
-    content: "- ";
-    top: 0%;
-    left: 15%;
-    border-right: 3px solid #000000;
-    cursor: pointer;
+    content: "";
+    top: 45%;
+    left: 10%;
+    background: url("../img/minus.png") transparent no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 3px;
 }
-.search__table-count:after {
+.order__table-count:after {
 	position: absolute;
-    content: "+ ";
-    top: 0%;
-    right: 12%;
-    border-left: 3px solid #000000;
-    cursor: pointer;
+    content: "";
+    top: 20%;
+    right: 10%;
+    background: url("../img/plus.png") transparent no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
 }
-.search__table-count:hover {
+.order__table-count:hover:before,
+.order__table-count:hover:after {
+	cursor: pointer;
+}
+.order__table-count span {
+	padding: 0 10px;
+	border-left: 2px solid #303030;
+	border-right: 2px solid #303030;
+}
+.order__table-count:hover {
 	opacity: 1;
 }
-.search__table-rm {
+.order__table-rm {
     position: relative;
     padding: 0;
     border: none;
@@ -1695,7 +1775,7 @@ a:hover {
     width: 30px;
     cursor: pointer;
 }
-.search__table-rm:after {
+.order__table-rm:after {
     position: absolute;
     content: "";
     background: url(../img/close.png) transparent no-repeat;
@@ -1718,18 +1798,22 @@ a:hover {
 	justify-content: space-between;
 	color: #000000;
 	font-size: 24px;
-	margin: 0 1%;
+	margin: 1% 0% 0 1%;
 }
 .order__result-menu-link {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	background-color: #FDBD03;
 	color: #000000;
 	font-size: 24px;
 	border-radius: 10px;
-	width: 25%;
-	padding: 1% 0 1% 0;
+	width: 27%;
+	padding: 0.5% 0;
+}
+.order__result-menu-link img {
+	padding: 0 2%;
 }
 /*===Оплата и доставка==============================================================*/
 /*===Заказ оформлен=================================================================*/
