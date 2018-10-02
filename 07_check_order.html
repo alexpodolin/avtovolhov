@@ -183,168 +183,131 @@
 			</ul>	
 		</nav>
 
-		<div class="search__result-fin">
-			<div class="search__result-wrapper-fin">
-				<p>По вашему запросу FEBI 02121 найдено 1250 вариантов</p>				
-				<table class="search__table-fin">
-					<thead class="search__table_header-fin">
+		<div class="order__result">
+			<div class="order__result-wrapper">
+				<div class="order__result-header">
+					<p>Корзина</p>
+					<img src="img/img_15.jpg" alt="корзина" class="order__result-header-img">
+					<p>Проверьте ваш заказ</p>
+				</div>
+				<table class="order__table">
+					<thead class="order__table_header">
 						<tr>
-							<th class="search__table_header-name-fin">Производитель</th>
-							<th class="search__table_header-name-fin">Номер</th>
-							<th class="search__table_header-name-fin">Инфо</th>
-							<th class="search__table_header-name-fin">Наименование</th>
-							<th class="search__table_header-name-fin">Цена</th>
-							<th class="search__table_header-name-fin">Срок поставки</th>
-							<th class="search__table_header-name-fin"></th>
-							<th class="search__table_header-name-fin"></th>
-							<th class="search__table_header-name-fin">Корзина</th>
+							<th class="order__table_header-name">
+								<label class="checkbox__wrapper" onclick="check_all(true);">
+									<input type="checkbox" class="order__table-chk" name="order__table-chk">
+									<span class="checkbox__checkmark"></span>
+								</label>
+							</th>
+							<th class="order__table_header-name">Производитель</th>
+							<th class="order__table_header-name">Номер</th>
+							<th class="order__table_header-name">Наименование</th>
+							<th class="order__table_header-name">Количество</th>
+							<th class="order__table_header-name">Цена</th>
+							<th class="order__table_header-name">Сумма</th>
+							<th class="order__table_header-name">Дата поставки</th>
+							<th class="order__table_header-name">Удалить</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Febi</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
-								<a href="#" class="search__table-foto"><img src="/img/foto.png" alt="фото"></a>
-							</td>
-							<td class="search__table-row-desc">Диск тормозной |перед прав/лев|</td>
-							<td class="search__table-row-price">1420 руб</td>
-							<td>2 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
 							<td>
-								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
+								<label class="checkbox__wrapper">
+									<input type="checkbox" class="order__table-chk" name="order__table-chk">
+									<span class="checkbox__checkmark"></span>
+								</label>
 							</td>
+							<td>ERRA</td>
+							<td>55078</td>
+							<td class="order__table-row-desc">Диск тормозной |перед прав/лев|</td>
+							<td>
+								<button class="search__table-count">2</button>
+							</td>
+							<td class="order__table-row-price">1420 руб</td>
+							<td class="order__table-row-summa">2840 руб</td>
+							<td>22.07.18</td>
+							<td><button class="search__table-rm"></button></td>						
 						</tr>
 
 						<tr>
-							<td>Febi</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
+							<td>
+								<label class="checkbox__wrapper">
+									<input type="checkbox" class="order__table-chk" name="order__table-chk">
+									<span class="checkbox__checkmark"></span>
+								</label>
 							</td>
-							<td class="search__table-row-desc">Диск тормозной VW Golf 2.3 передний (1шт.) FEBI</td>
-							<td class="search__table-row-price">320 руб</td>
-							<td>1 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
+							<td>Miles</td>
+							<td>36789</td>
+							<td class="order__table-row-desc">Диск тормозной VW Golf 2.3 передний (1шт.) FEBI</td>
 							<td>
 								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
 							</td>
+							<td class="order__table-row-price">320 руб</td>
+							<td class="order__table-row-summa">320 руб</td>
+							<td>25.07.18</td>
+							<td><button class="search__table-rm"></button></td>						
 						</tr>
 
 						<tr>
-							<td>Febi</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
-							</td>
-							<td class="search__table-row-desc">Диск тормозной пер А80, VW Golf н/вент 239х12</td>
-							<td class="search__table-row-price">450 руб</td>
-							<td>1 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
 							<td>
-								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
+								<label class="checkbox__wrapper">
+									<input type="checkbox" class="order__table-chk" name="order__table-chk">
+									<span class="checkbox__checkmark"></span>
+								</label>
 							</td>
-						</tr>
-
-						<tr>
-							<td>Febi</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
-								<a href="#" class="search__table-foto"><img src="/img/foto.png" alt="фото"></a>
-							</td>
-							<td class="search__table-row-desc">ДИСК ТОРМ VW GOLF II/III PASSATII 83- ПЕР НЕ ВЕНТИЛИРУЕМЫЙ</td>
-							<td class="search__table-row-price">1117 руб</td>
-							<td>2 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
-							<td>
-								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td>Febi</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
-								<a href="#" class="search__table-foto"><img src="/img/foto.png" alt="фото"></a>
-							</td>
-							<td class="search__table-row-desc">Диск тормозной передний Audi 80, VW Golf/Passat 1.1</td>
-							<td class="search__table-row-price">2317 руб</td>
-							<td>3 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
-							<td>
-								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
-							</td>
-						</tr>
-					</tbody>				
-				</table>				
-			
-				<p>Аналогов FEBI 02121 найдено 2 варианта</p>				
-				<table class="search__table-fin">
-					<thead class="search__table_header-fin">
-						<tr>
-							<th class="search__table_header-name-fin">Производитель</th>
-							<th class="search__table_header-name-fin">Номер</th>
-							<th class="search__table_header-name-fin">Инфо</th>
-							<th class="search__table_header-name-fin">Наименование</th>
-							<th class="search__table_header-name-fin">Цена</th>
-							<th class="search__table_header-name-fin">Срок поставки</th>
-							<th class="search__table_header-name-fin"></th>
-							<th class="search__table_header-name-fin"></th>
-							<th class="search__table_header-name-fin">Корзина</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>FMiles</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
-								<a href="#" class="search__table-foto"><img src="/img/foto.png" alt="фото"></a>
-							</td>
-							<td class="search__table-row-desc">Диск тормозной |перед прав/лев|</td>
-							<td class="search__table-row-price">1420 руб</td>
-							<td>2 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
-							<td>
-								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
-							</td>
-						</tr>
-
-						<tr>
 							<td>Metelli</td>
-							<td>02121</td>							
-							<td class="search__table-row-info">
-								<a href="#" class="search__table-info"><img src="/img/info.png" alt="информация"></a>
-							</td>
-							<td class="search__table-row-desc">Диск тормозной VW Golf 2.3 передний (1шт.) FEBI</td>
-							<td class="search__table-row-price">320 руб</td>
-							<td>1 дней</td>
-							<td><a href="#" class="search__table-heart"><img src="/img/heart.png" alt="в избранное"></a></td>
-							<td><a href="#" class="search__table-hand"><img src="/img/hand.png" alt="для валидации"></a></td>
+							<td>21370</td>
+							<td class="order__table-row-desc">Диск тормозной пер А80, VW Golf н/вент 239х12</td>
 							<td>
 								<button class="search__table-count">1</button>
-								<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина"></a>
 							</td>
-						</tr>						
-					</tbody>				
-				</table>				
-			</div>
+							<td class="order__table-row-price">450 руб</td>
+							<td class="order__table-row-summa">450 руб</td>
+							<td>23.07.18</td>
+							<td><button class="search__table-rm"></button></td>						
+						</tr>
 
+						<tr>
+							<td>
+								<label class="checkbox__wrapper">
+									<input type="checkbox" class="order__table-chk" name="order__table-chk">
+									<span class="checkbox__checkmark"></span>
+								</label>
+							</td>
+							<td>Febi</td>
+							<td>68900</td>
+							<td class="order__table-row-desc">ДИСК ТОРМ VW GOLF II/III PASSATII 83- ПЕР НЕ ВЕНТИЛИРУЕМЫЙ</td>
+							<td>
+								<button class="search__table-count">1</button>
+							</td>
+							<td class="order__table-row-price">1117 руб</td>
+							<td class="order__table-row-summa">1117 руб</td>
+							<td>25.07.18</td>
+							<td><button class="search__table-rm"></button></td>						
+						</tr>
+	
+					</tbody>				
+				</table>
+
+				<div class="order__result-total">
+					<p>Всего позиций: 4</p>
+					<p>Всего товаров: 5</p>
+					<p>Сумма: 4727 руб</p>
+				</div>
+
+				<div class="order__result-menu">
+					<a href="#" class="order__result-menu-link">
+						<img src="img/left_arrow.png">
+						Вернуться в магазин
+					</a>
+
+					<a href="#" class="order__result-menu-link">
+						<img src="img/right_arrow.png">
+						Продолжить оформление заказа
+					</a>
+				</div>
+
+			</div>
 		</div>
 	</div>	
 
@@ -437,10 +400,8 @@
 				</div>
 
 				<input type="tel" name="form__registration-tel" class="form__registration-tel" placeholder="Введите ваш номер телефона для связи" required>
-
 				
-				<button type="button" id="form__registration-send-code">Выслать проверочный код</button>
-				
+				<button type="button" id="form__registration-send-code">Выслать проверочный код</button>				
 				
 			   	<input type="text" name="form__registration-code" class="form__registration-code"  placeholder="Ввести проверочный код" required>			    
 

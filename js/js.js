@@ -57,3 +57,15 @@ function show_reg_form() {
 function hide_reg_form() {
     document.getElementById('page__registration').style.display = 'none';
 }
+
+// В таблице окончательного заказа выбрать все сразу
+function check_all(checktoggle) {
+    var checkboxes = new Array(); 
+    checkboxes = document.getElementsByClassName('order__table-chk');
+
+    for (var i=0; i < checkboxes.length; i++)  {
+        if (checkboxes[i].type == 'checkbox')   {
+          checkboxes[i].checked = checktoggle;
+        }
+  }
+}

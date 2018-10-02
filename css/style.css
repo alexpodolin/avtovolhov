@@ -1563,6 +1563,173 @@ a:hover {
 	background-color: transparent;
 }
 /*===Корзина с заказом==============================================================*/
-/*===Сам заказ======================================================================*/
+/*===Проверка заказа================================================================*/
+.order__result {
+	display: flex;
+	flex-basis: 89%;
+}
+.order__result-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 1%;
+}
+.order__result-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	border-radius: 15px;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: #FDBD03;
+	background-color: #303030;
+	padding: 0 5%;
+    margin: 4% 0 0 0;
+}
+.order__result-header-img {
+	position: absolute;	
+	width: 250px;
+	height: 250px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 5px solid #000000;
+	top: -47%;
+	left: 20%;   
+}
+.order__table {
+    margin: 5% 1% 0.5% 1%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;   
+    width: 98%;
+    border: 1px solid #468899;
+}
+.order__table_header {
+	background-color: #FDBD03;
+}
+.order__table_header-name {
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+	padding: 1% 0.5%;
+}
+.order__table {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding: 1% 0.5%;
+}
+.order__table-row-desc {
+	text-align: left;	
+}
+.order__table-row-desc,
+.order__table-row-price,
+.order__table-row-summa { 
+	padding: 1% 0.5%; 
+}
+.order__table tr:hover {
+	background-color: #FFF7AE;
+}
+.order__table thead tr:hover {
+	background-color: transparent;
+}
+.checkbox__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	user-select: none;
+}
+.order__table-chk {
+	display: none;
+}
+.checkbox__checkmark {
+	content: "";
+	background: url("../img/chkbox.png") transparent no-repeat;
+	background-size: contain;
+	height: 20px;
+    width: 20px;    
+}
+.order__table-chk:hover ~ .checkbox__checkmark {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.order__table-chk:checked ~ .checkbox__checkmark {
+	content: "";
+	background: url("../img/chkbox_marked.png") transparent no-repeat;
+	background-size: contain;
+	height: 20px;
+    width: 20px;    
+}
+.search__table-count {
+	position: relative;
+	padding: 0 30%;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+.search__table-count:before {
+	position: absolute;
+    content: "- ";
+    top: 0%;
+    left: 15%;
+    border-right: 3px solid #000000;
+    cursor: pointer;
+}
+.search__table-count:after {
+	position: absolute;
+    content: "+ ";
+    top: 0%;
+    right: 12%;
+    border-left: 3px solid #000000;
+    cursor: pointer;
+}
+.search__table-count:hover {
+	opacity: 1;
+}
+.search__table-rm {
+    position: relative;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.search__table-rm:after {
+    position: absolute;
+    content: "";
+    background: url(../img/close.png) transparent no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    top: 0%;
+    left: 0%;
+}
+.order__result-total {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+.order__result-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #000000;
+	font-size: 24px;
+	margin: 0 1%;
+}
+.order__result-menu-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #FDBD03;
+	color: #000000;
+	font-size: 24px;
+	border-radius: 10px;
+	width: 25%;
+	padding: 1% 0 1% 0;
+}
 /*===Оплата и доставка==============================================================*/
 /*===Заказ оформлен=================================================================*/
