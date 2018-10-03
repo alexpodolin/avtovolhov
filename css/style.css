@@ -1527,7 +1527,7 @@ a:hover {
     margin: 0.3% 0 0 0;
 }
 .search__table-fin {
-    margin: 0.5% 1%;
+    margin: 5px 10px;
     background-color: #FFFFFF;
     border-collapse: collapse;   
     width: 98%;
@@ -1540,13 +1540,13 @@ a:hover {
 	font-size: 32px;
 	font-weight: normal;
 	text-align: center;
-	padding: 1% 0.5%;
+	padding: 10px 5px;
 }
 .search__table-fin td {
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    padding: 1% 0.5%;
+    padding: 5px 5px;
 }
 .search__table-fin .search__table-row-desc {
 	text-align: left;
