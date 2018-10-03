@@ -189,12 +189,12 @@
 				<table class="search__table-fin">
 					<thead class="search__table_header-fin">
 						<tr>
-							<th width="14.5%" class="search__table_header-name-fin">Производитель</th>
-							<th width="6.5%" class="search__table_header-name-fin">Номер</th>
+							<th style="width: 14.5%" class="search__table_header-name-fin">Производитель</th>
+							<th style="width: 6.5%" class="search__table_header-name-fin">Номер</th>
 							<th class="search__table_header-name-fin">Инфо</th>
 							<th class="search__table_header-name-fin">Наименование</th>
-							<th width="7%" class="search__table_header-name-fin">Цена</th>
-							<th width="9%" class="search__table_header-name-fin">Срок поставки</th>
+							<th style="width: 7%" class="search__table_header-name-fin">Цена</th>
+							<th style="width: 9%" class="search__table_header-name-fin">Срок поставки</th>
 							<th class="search__table_header-name-fin"></th>
 							<th class="search__table_header-name-fin"></th>
 							<th class="search__table_header-name-fin">Корзина</th>
@@ -321,17 +321,17 @@
 						</tr>
 					</tbody>				
 				</table>				
-			
-				<p>Аналогов FEBI 02121 найдено 2 варианта</p>				
+
+				<p>Аналогов FEBI 02121 найдено 2 варианта</p>			
 				<table class="search__table-fin">
 					<thead class="search__table_header-fin">
 						<tr>
-							<th width="14.5%" class="search__table_header-name-fin">Производитель</th>
-							<th width="6.5%" class="search__table_header-name-fin">Номер</th>
+							<th style="width: 14.5%" class="search__table_header-name-fin">Производитель</th>
+							<th style="width: 6.5%" class="search__table_header-name-fin">Номер</th>
 							<th class="search__table_header-name-fin">Инфо</th>
 							<th class="search__table_header-name-fin">Наименование</th>
-							<th width="7%" class="search__table_header-name-fin">Цена</th>
-							<th width="9%" class="search__table_header-name-fin">Срок поставки</th>
+							<th style="width: 7%" class="search__table_header-name-fin">Цена</th>
+							<th style="width: 9%" class="search__table_header-name-fin">Срок поставки</th>
 							<th class="search__table_header-name-fin"></th>
 							<th class="search__table_header-name-fin"></th>
 							<th class="search__table_header-name-fin">Корзина</th>
@@ -385,9 +385,40 @@
 							</td>
 						</tr>						
 					</tbody>				
-				</table>				
-			</div>
+				</table>	
 
+				<div class="search__pagination-wrapper">
+					<div class="search__pagination-menu">				
+						<a href="#" class="search__pagination-back">Назад</a>
+						<a href="#" class="search__pagination-num">1</a>
+						<a href="#" class="search__pagination-num-dot">...</a>
+						<a href="#" class="search__pagination-num">5</a>
+						<a href="#" class="search__pagination-num">6</a>
+						<a href="#" class="search__pagination-num">7</a>
+						<a href="#" class="search__pagination-num">8</a>
+						<a href="#" class="search__pagination-num">9</a>
+						<a href="#" class="search__pagination-num-dot">...</a>
+						<a href="#" class="search__pagination-num">41</a>
+						<a href="#" class="search__pagination-forward">Вперед</a>
+					</div>
+
+					<div class="search__pagination-form">
+					<p>Отображать:</p>
+						<form>
+							<fieldset>
+								<legend></legend>		
+								<label for="search__pagination-select" class="search__pagination-select-cust">	
+									<select id="search__pagination-select">
+										<option value="30" label="30" selected>30</option>
+										<option value="50" label="50">50</option>
+										<option value="100" label="100">100</option>
+									</select>	
+								</label>
+							</fieldset>						
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>	
 

@@ -1632,6 +1632,114 @@ a:hover {
     font-size: 14px;
     font-style: italic;
 }
+.search__pagination-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1% 1.5% 1% 0%;
+}
+.search__pagination-menu {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    /*padding: 0 0 0 39%;*/    
+}
+.search__pagination-back,
+.search__pagination-forward,
+.search__pagination-num-dot,
+.search__pagination-num {
+	color: #007BFF;
+	font-size: 24px;
+    font-weight: normal;
+}
+.search__pagination-back {
+	border-right: 1px solid #E0E1E5;
+	padding: 5px 12px;
+    /*margin: 0 5% 0 0;*/
+}
+.search__pagination-forward {	
+	padding: 5px 12px;
+	/*margin: 0 0 0 5%;*/
+}
+.search__pagination-num-dot,
+.search__pagination-num { 
+	border-right: 1px solid #E0E1E5;
+    padding: 5px 10px;
+    /*margin: 0 1%;*/
+}
+.search__pagination-back:hover,
+.search__pagination-forward:hover,
+.search__pagination-num-dot:hover,
+.search__pagination-num:hover {
+	color: #FFFFFF;
+	background-color: #007BFF;
+}
+
+
+.search__pagination-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFFFFF !important;
+	border-radius: 5px;
+}
+.search__pagination-form p {	
+	background-color: transparent;
+	color: #007BFF;
+	text-transform: uppercase;
+	font-size: 24px !important;
+	padding: 5px 12px;
+	text-align: center;
+	font-weight: normal;
+}
+.search__pagination-form form {
+	/*padding: 0 0 0 5%;*/
+}
+.search__pagination-form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.search__pagination-form legend {
+	display: none;
+}
+.search__pagination-select-cust {
+	position: relative;
+	display: flex;
+	background-color: #007BFF;
+	z-index: 10;
+	width: 50%;
+	overflow: hidden;
+}
+.search__pagination-form select {
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 4px 40px 4px 10px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+#search__pagination-select option {
+	font-weight: normal;
+	color: #000000;
+	border-radius: 5px;
+}
+.search__pagination-select-cust:after {
+	content: "";
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	width: 23px;
+	height: 21px;
+	background: url("../img/arrow.png") transparent no-repeat;
+	background-size: contain;
+	z-index: -1;
+}
 /*===Корзина с заказом==============================================================*/
 /*===Проверка заказа================================================================*/
 .order__result {
