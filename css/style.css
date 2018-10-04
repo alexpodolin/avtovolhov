@@ -1672,6 +1672,7 @@ a:hover {
 .search__pagination-num:hover {
 	color: #FFFFFF;
 	background-color: #007BFF;
+	opacity: 1;
 }
 
 .search__pagination-form {
