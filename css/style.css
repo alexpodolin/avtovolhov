@@ -1636,15 +1636,15 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	margin: 1% 1.5% 1% 0%;
+	align-items: center;	
+	margin: 2% 1.5% 0 0;
 }
 .search__pagination-menu {
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
-    border-radius: 5px;
-    /*padding: 0 0 0 39%;*/    
+    border-radius: 5px;  
+    margin: 0 0 0 30%;
 }
 .search__pagination-back,
 .search__pagination-forward,
@@ -1657,17 +1657,14 @@ a:hover {
 .search__pagination-back {
 	border-right: 1px solid #E0E1E5;
 	padding: 5px 12px;
-    /*margin: 0 5% 0 0;*/
 }
 .search__pagination-forward {	
 	padding: 5px 12px;
-	/*margin: 0 0 0 5%;*/
 }
 .search__pagination-num-dot,
 .search__pagination-num { 
 	border-right: 1px solid #E0E1E5;
     padding: 5px 10px;
-    /*margin: 0 1%;*/
 }
 .search__pagination-back:hover,
 .search__pagination-forward:hover,
@@ -1677,25 +1674,21 @@ a:hover {
 	background-color: #007BFF;
 }
 
-
 .search__pagination-form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #FFFFFF !important;
-	border-radius: 5px;
+	background-color: #FFFFFF;
+	border-radius: 5px;	
+    overflow: hidden;
 }
-.search__pagination-form p {	
+.search__pagination-form p {
 	background-color: transparent;
 	color: #007BFF;
 	text-transform: uppercase;
 	font-size: 24px !important;
-	padding: 5px 12px;
-	text-align: center;
+	padding: 5px 12px;	
 	font-weight: normal;
-}
-.search__pagination-form form {
-	/*padding: 0 0 0 5%;*/
 }
 .search__pagination-form fieldset {
 	margin: 0;
@@ -1707,14 +1700,17 @@ a:hover {
 }
 .search__pagination-select-cust {
 	position: relative;
-	display: flex;
+	display: flex;		
 	background-color: #007BFF;
 	z-index: 10;
-	width: 50%;
+	width: 100%;
 	overflow: hidden;
 }
+.search__pagination-select-cust option {
+	color: #000000;
+}
 .search__pagination-form select {
-	background: transparent;
+    background: transparent;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -1723,20 +1719,16 @@ a:hover {
 	font-weight: normal;
 	color: #FFFFFF;
 	border: none;
-}
-#search__pagination-select option {
-	font-weight: normal;
-	color: #000000;
-	border-radius: 5px;
+	cursor: pointer;
 }
 .search__pagination-select-cust:after {
 	content: "";
 	position: absolute;
-	right: 12px;
-	top: 8px;
-	width: 23px;
-	height: 21px;
-	background: url("../img/arrow.png") transparent no-repeat;
+	right: 0;
+	top: 0;
+	width: 32px;
+	height: 40px;
+	background: url("../img/arrow_blue.png") #FFFFFF no-repeat;
 	background-size: contain;
 	z-index: -1;
 }
