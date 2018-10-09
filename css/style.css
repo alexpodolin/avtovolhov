@@ -1917,4 +1917,183 @@ a:hover {
 	padding: 0 2%;
 }
 /*===Оплата и доставка==============================================================*/
+.order__issue {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-basis: 89%;
+}
+.order__issue-wrapper {
+	width: 100%;
+	margin: 3% 1% 0 1%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+.order__issue-header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #303030;
+	border-radius: 15px;	
+	padding: 1%;
+}
+.order__issue-header p {
+	margin: 0;
+	padding: 0;
+	color: #FDBD03;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 40px;
+}
+.order__issue-header p:first-child {
+	margin: 0 0 0 3%;
+}
+.order__issue-header p:last-child {
+	width: 560px;
+	text-align: center;
+	margin: 0 11% 0 0;
+}
+.order__issue-header-img {
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 5px solid #303030;
+	width: 190px;
+    height: 190px;
+    left: 250px;
+}
+.order__issue-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3% auto 0 auto;
+	padding: 0;
+}
+.order__issue-form p:first-child {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 32px;	
+}
+.order__issue-form strong {
+	color: #FDBD03;
+}
+#issue__form {
+	display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+#issue__form fieldset {
+	border: none;
+	margin: 0;
+    padding: 0;
+}
+#issue__form legend {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.issue__select  {	
+	position: relative;
+	display: flex;
+	border: none;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	z-index: 10;
+	width: 100%; 
+	overflow: hidden;
+}
+.issue__select select {
+	border: none;
+	outline: none;    
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%; 
+    margin: 0;
+    display: flex;
+    padding: 5px 12px 5px 12px;
+    font-size: 24px;
+    color: #007BFF;
+    cursor: pointer;
+}
+.issue__select:after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 1px;
+	width: 32px;
+	height: 35px;
+	background: url("../img/arrow_blue.png") #FFFFFF no-repeat;
+	background-size: contain;
+	z-index: -1;
+}
+#issue__form p {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+#issue__form textarea {
+	resize: none;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 5px;
+	width: 100%;    
+	height: 200px;
+    margin: 0;
+    padding: 5px;
+    font-size: 24px;
+    color: #007BFF;
+}
+#issue__form input[type="checkbox"] {
+	display: none;
+}
+#issue__form input[type="checkbox"] ~ label {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: normal;
+}
+#issue__form input[type="checkbox"] ~ label:before {
+    content: "";
+    position: absolute;
+    background: url(../img/chkbox.png) #FFFFFF no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    left: -25px;
+    overflow: hidden;
+    border: none;
+    border-radius: 7px;
+}
+#issue__form input[type="checkbox"] ~ label:hover:before {
+	cursor: pointer;
+}
+#issue__form input[type="checkbox"]:checked ~ label:before {
+	content: "";
+	position: absolute;
+	background: url("../img/chkbox_marked.png") #FFFFFF no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+#issue__form button {
+    background-color: #FDBD03;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 0 0 105px;
+    padding: 15px 25px;
+    color: #000000;
+    font-size: 32px;
+    cursor: pointer;
+}
 /*===Заказ оформлен=================================================================*/
