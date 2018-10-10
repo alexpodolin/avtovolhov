@@ -2097,3 +2097,73 @@ a:hover {
     cursor: pointer;
 }
 /*===Заказ оформлен=================================================================*/
+.order__processed {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-basis: 89%;
+}
+.order__processed-wrapper {
+	width: 100%;
+	margin: 3.5% 1% 0 1%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+.order__processed-header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #303030;
+	border-radius: 15px;	
+	padding: 1.5%;
+}
+.order__processed-header p {
+	margin: 0;
+	padding: 0;
+	color: #FDBD03;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 40px;
+}
+.order__processed-header p:first-child {
+	margin: 0 0 0 3%;
+}
+.order__processed-header p:last-child {
+	width: 560px;
+	text-align: center;
+	margin: 0 11% 0 0;
+}
+.order__processed-header-img {
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 5px solid #303030;
+	width: 190px;
+    height: 190px;
+    left: 250px;
+}
+.order__processed-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3% auto 0 auto;
+	padding: 0;
+	font-size: 40px;
+	line-height: 48px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.order__processed-text strong, 
+.order__processed-text span {
+	color: #FDBD03;
+	font-weight: normal;
+}
+.order__processed-text strong {
+	padding: 1% 0;
+}
+/*==================================================================================*/
