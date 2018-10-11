@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>ЛенОблАвто</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="авто, автозапчасти, запчасти, волхов, недорого, доставка">		
+	<meta name="description" content="продажи автозапчастей в городе Волхов и области">
+	<meta name="revisit-after" content="15 days">
+	<meta name="robots" content="all">
+	<meta name="author" content="Александр Подолин, alex.podolin@gmail.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<style media="all,print,screen"></style>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css" media="all">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css" media="all">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<script src="js/js.js"></script>
+</head>
+
+<body>
+<div id="wrapper" itemscope itemtype="http://schema.org/AutoPartsStore">
+<meta itemprop="address" content="Ленинградская обл. г. Волхов (1) ул. Юрия Гагарина д. 2А">
+<meta itemprop="branchOf" content="АвтоВолхов">
+<meta itemprop="brand" content="afam, alaska, alko, amd, asp, autofriend, beru, big filter, bosch, cargo, castrol, denso, elf, fag, filtron, fit, fixar, liqui moly, genergy, good year, hella, luk, mann filter, norma, renult, optima, osram, philips, shell, swf, thule, torr, tsn, vaico, wabco, wd40 , zic, роснефть ">
+<meta itemprop="description" content="продажа автозапчастей в городе Волхов и области">
+<meta itemprop="email" content="avtovolhov1@yandex.ru, gagarina@autovolhov.ru">
+<meta itemprop="geo" content="59.916744, 32.331544">
+<meta itemprop="image" content="img/header_la_logo.png">
+<meta itemprop="logo" content="img/header_la_logo.png">
+<meta itemprop="legalName" content="ЛенОблАвто">
+<meta itemprop="name" content="ЛенОблАвто">
+<meta itemprop="paymentAccepted" content="наличные, кредитные карты">
+<meta itemprop="subOrganization" content="АвтоВолхов">
+<meta itemprop="telephone" content="+7-931-3062506">
+
+<header class="header" id="header__hide" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="header__leftlogo">
+		<span class="header__left_tagline" itemprop="name">ЛенОблАвто</span>
+		<span class="header__left_la-logo" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></span>
+	</div>
+
+	<div class="header__menu-btn"></div>
+
+	<div class="header__main">
+		<span class="header__main_tagline">Автозапчасти</span>
+		<div class="form__wrapper">
+			<form class="search" id="search">
+				<fieldset>
+					<legend></legend>
+					<label for="search__by" class="search__label">
+						<input id="search__by" name="Поиск" placeholder="Введите номер детали" type="text">						
+					</label>
+					<button type="submit" form="search" class="search__icon-search"></button>
+				</fieldset>
+			</form>
+			<button type="button" class="last__items" onclick="show_last_items();"></button>			
+
+			<a href="#" class="search__basket"></a>
+			<a class="search__login" onclick="show_login_form();"><span>Вход</span></a>
+		</div>
+	</div>
+
+	<div class="header__rightlogo">
+		<span class="header__right_tagline" itemprop="name">АвтоВолхов</span>
+		<a href="#" class="header__right_insta" itemscope itemprop="image" itemtype="http://schema.org/ImageObject"></a>
+	</div>	
+</header>
+
+<div class="header__mini" id="header__mini-show" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="header__mini-leftlogo">
+		<span class="header__mini-logo"></span>
+		<div class="header__mini-btn">
+			<nav class="header__mini-nav">
+				<ul class="header__mini-ul">
+					<li class="header__mini-li"><a href="main" class="header__mini-link">Главная</a></li>
+					<li class="header__mini-li"><a href="catalogs" class="header__mini-link">Каталоги</a></li>
+					<li class="header__mini-li"><a href="brends" class="header__mini-link">Бренды</a></li>
+					<li class="header__mini-li"><a href="to" class="header__mini-link">Запчасти для ТО</a></li>
+					<li class="header__mini-li"><a href="help" class="header__mini-link">Помощь</a></li>
+					<li class="header__mini-li"><a href="contacts" class="header__mini-link">Контакты</a></li>
+					<li class="header__mini-li"><a href="forum" class="header__mini-link" id="header__mini-link-last">Форум</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="header__main header__main-mini">
+		<div class="form__wrapper form__wrapper-mini">
+			<form class="search search__mini" id="search">
+				<fieldset>
+					<legend></legend>
+					<label for="search__by" class="search__label">
+						<input id="search__by" name="Поиск" placeholder="Номер, название или VIN" type="text">						
+					</label>
+					<button type="submit" form="search" class="search__icon-search search__icon-search-mini"></button>
+				</fieldset>
+			</form>
+			<button type="button" class="last__items last__items-mini" onclick="show_last_items();"></button>
+			<a href="#" class="search__basket search__basket-mini"></a>
+			<a class="search__logout" onclick="show_login_form();"><span>Вход</span></a>
+		</div>
+	</div>
+</div>
+
+<main class="main__inner">
+	<div class="personal__area">
+		<nav class="personal__area-nav">
+			<ul class="personal__area-ul">
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/gear.png" class="personal__area-link-img" alt="Автозапчасти">
+						<img src="img/gear_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Автозапчасти</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/jerrycan.png" class="personal__area-link-img" alt="Масла и автохимия">
+						<img src="img/jerrycan_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Масла и автохимия</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/wheel.png" class="personal__area-link-img" alt="Шины и диски">
+						<img src="img/wheel_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Шины и диски</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/accessories.png" class="personal__area-link-img" alt="Аксессуары">
+						<img src="img/accessories_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Аксессуары</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/instruments.png" class="personal__area-link-img" alt="Инструменты">
+						<img src="img/instruments_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Инструменты</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/accumulators.png" class="personal__area-link-img" alt="Аккумуляторы">
+						<img src="img/accumulators_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Аккумуляторы</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/autoglass.png" class="personal__area-link-img"  alt="Автостекла">
+						<img src="img/autoglass_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Автостекла</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/parts.png" class="personal__area-link-img" alt="Кузовные детали">
+						<img src="img/parts_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Кузовные детали</span>
+					</a>
+				</li>
+
+				<li class="personal__area-ul-item">
+					<a href="#" class="personal__area-link">
+						<img src="img/auto_fastening.png" class="personal__area-link-img" alt="Автокрепеж">
+						<img src="img/auto_fastening_hover.png" class="personal__area-link-hover" alt="Автозапчасти">
+						<span>Автокрепеж</span>
+					</a>
+				</li>
+			</ul>	
+		</nav>
+
+		<div class="search__result-fin">
+			<div class="search__result-wrapper-fin">
+				<p>По вашему запросу FEBI 02121 найдено 1250 вариантов</p>				
+				<table class="search__table-fin">
+					<thead class="search__table_header-fin">
+						<tr>
+							<th style="width: 14.5%" class="search__table_header-name-fin">Производитель</th>
+							<th style="width: 6.5%" class="search__table_header-name-fin">Номер</th>
+							<th class="search__table_header-name-fin">Инфо</th>
+							<th class="search__table_header-name-fin">Наименование</th>
+							<th style="width: 7%" class="search__table_header-name-fin">Цена</th>
+							<th style="width: 9%" class="search__table_header-name-fin">Срок поставки</th>
+							<th class="search__table_header-name-fin"></th>
+							<th class="search__table_header-name-fin"></th>
+							<th class="search__table_header-name-fin">Корзина</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Febi</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+									<a href="#" class="search__table-foto"><img src="img/foto.png" alt="фото"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">Диск тормозной |перед прав/лев|</td>
+							<td class="search__table-row-price">1420 руб</td>
+							<td>2 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>							
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>1</span>
+									</a>						
+								</div>	
+							</td>
+						</tr>
+
+						<tr>
+							<td>Febi</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">Диск тормозной VW Golf 2.3 передний (1шт.) FEBI</td>
+							<td class="search__table-row-price">320 руб</td>
+							<td>1 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>2</span>
+									</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Febi</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">Диск тормозной пер А80, VW Golf н/вент 239х12</td>
+							<td class="search__table-row-price">450 руб</td>
+							<td>1 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>1</span>
+									</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Febi</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+									<a href="#" class="search__table-foto"><img src="img/foto.png" alt="фото"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">ДИСК ТОРМ VW GOLF II/III PASSATII 83- ПЕР НЕ ВЕНТИЛИРУЕМЫЙ</td>
+							<td class="search__table-row-price">1117 руб</td>
+							<td>2 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>0</span>
+									</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Febi</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+									<a href="#" class="search__table-foto
+									"><img src="img/foto.png" alt="фото"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">Диск тормозной передний Audi 80, VW Golf/Passat 1.1</td>
+							<td class="search__table-row-price">2317 руб</td>
+							<td>3 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>1</span>
+									</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>				
+				</table>				
+
+				<p>Аналогов FEBI 02121 найдено 2 варианта</p>			
+				<table class="search__table-fin">
+					<thead class="search__table_header-fin">
+						<tr>
+							<th style="width: 14.5%" class="search__table_header-name-fin">Производитель</th>
+							<th style="width: 6.5%" class="search__table_header-name-fin">Номер</th>
+							<th class="search__table_header-name-fin">Инфо</th>
+							<th class="search__table_header-name-fin">Наименование</th>
+							<th style="width: 7%" class="search__table_header-name-fin">Цена</th>
+							<th style="width: 9%" class="search__table_header-name-fin">Срок поставки</th>
+							<th class="search__table_header-name-fin"></th>
+							<th class="search__table_header-name-fin"></th>
+							<th class="search__table_header-name-fin">Корзина</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>FMiles</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+									<a href="#" class="search__table-foto"><img src="img/foto.png" alt="фото"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">Диск тормозной |перед прав/лев|</td>
+							<td class="search__table-row-price">1420 руб</td>
+							<td>2 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>1</span>
+									</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Metelli</td>
+							<td>02121</td>							
+							<td class="search__table-row-info">
+								<div>
+									<a href="#" class="search__table-info"><img src="img/info.png" alt="информация"></a>
+								</div>
+							</td>
+							<td class="search__table-row-desc">Диск тормозной VW Golf 2.3 передний (1шт.) FEBI</td>
+							<td class="search__table-row-price">320 руб</td>
+							<td>1 дней</td>
+							<td><a href="#" class="search__table-heart"><img src="img/heart.png" alt="в избранное"></a></td>
+							<td><a href="#" class="search__table-hand"><img src="img/hand.png" alt="для валидации"></a></td>
+							<td class="search__table-row-cart">
+								<div>
+									<button class="search__table-count"><span>1</span></button>
+									<a href="#" class="search__table-basket"><img src="img/basket_empty.png" alt="ваша корзина">
+										<span>2</span>
+									</a>
+								</div>
+							</td>
+						</tr>						
+					</tbody>				
+				</table>	
+
+				<div class="search__pagination-wrapper">
+					<div class="search__pagination-menu">				
+						<a href="#" class="search__pagination-back">Назад</a>
+						<a href="#" class="search__pagination-num">1</a>
+						<a href="#" class="search__pagination-num-dot">...</a>
+						<a href="#" class="search__pagination-num">5</a>
+						<a href="#" class="search__pagination-num">6</a>
+						<a href="#" class="search__pagination-num">7</a>
+						<a href="#" class="search__pagination-num">8</a>
+						<a href="#" class="search__pagination-num">9</a>
+						<a href="#" class="search__pagination-num-dot">...</a>
+						<a href="#" class="search__pagination-num">41</a>
+						<a href="#" class="search__pagination-forward">Вперед</a>
+					</div>
+
+					<div class="search__pagination-form">
+					<p>Отображать:</p>	
+						<form>
+							<fieldset>
+								<legend></legend>		
+								<label for="search__pagination-select" class="search__pagination-select-cust">			
+									<select id="search__pagination-select">
+										<option value="30" label="30" selected>30</option>
+										<option value="50" label="50">50</option>
+										<option value="100" label="100">100</option>
+									</select>	
+								</label>
+							</fieldset>						
+						</form>									
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="main__bottom_menu">
+		<div class="main__bottom_menu-container">
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Информация</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">О нас</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Помощь</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Цены и скидки</a></li>
+				</ul>
+			</div>
+
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Служба поддержки</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Обратная связь</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Возврат товара</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Книга отзывов</a></li>
+				</ul>
+			</div>
+
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Дополнительно</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Акции</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Производители</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Партнерская программа</a></li>
+				</ul>
+			</div>
+
+			<div class="main__bottom_menu-wrap" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<p>Личный кабинет</p>
+				<ul>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Закладки</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">История заказов</a></li>
+					<li><a href="#" class="main__bottom_menu-link" itemprop="url">Настройки пользователя</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	<div class="footer__copyright">
+		<span itemprop="copyrightHolder">Работаем для наших клиентов с 1997 года</span>
+		<span><small> &copy; Любое копирование запрещено</small></span>	
+	</div>
+</footer>
+
+<div id="page__login">
+	<div class="login__wrapper">
+		<div class="login__wrapper-top">
+			<span class="login__la-logo"></span>
+			<p>Вход в систему</p>
+			<a href="#" class="login__insta-logo"></a>
+		</div>
+		<form class="form__login" autocomplete="on">
+			<fieldset>
+				<legend class="form__login-legend">Для входа в систему введите адрес электронной почты и пароль</legend>
+				<input type="email" name="form__login-email" placeholder="электронная почта" required>
+				<input type="password" name="form__login-passwd" placeholder="пароль" required>
+
+				<input type="checkbox" id="form__login-remember-me" name="form__login-remember-me">
+				<label for="form__login-remember-me">Сохранить вход</label>
+
+				<a href="#" class="form__login_forget-passwd">Забыли пароль ?</a>
+
+				<button type="submit" class="form__login-submit">Вход</button>
+				<button type="button" id="form__login-reg" onclick="show_reg_form();">Регистрация нового пользователя</button>
+			</fieldset>
+		</form>
+		<a class="page__login-close" onclick="hide_login_form();"></a>
+	</div>	
+</div>
+
+<div id="page__registration">
+	<div class="registration__wrapper">
+		<p>Регистрация нового Пользователя</p>
+	
+		<form class="form__registration" autocomplete="on">
+			<fieldset>
+				<legend class="form__registration-legend">Все поля обязательные для заполнения</legend>
+				<input type="text" name="form__registration-fio" class="form__registration-fio" placeholder="Фамилия Имя Отчество" required>
+
+				<div class="form__registration-login">
+					<input type="email" name="form__registration-login" placeholder="логин - ваш e-mail" required>
+					<button type="button" id="form__registration-chk-name" class="form__registration-chk-name">Проверить</button>
+				</div>
+
+				<input type="tel" name="form__registration-tel" class="form__registration-tel" placeholder="Введите ваш номер телефона для связи" required>
+
+				
+				<button type="button" id="form__registration-send-code">Выслать проверочный код</button>
+				
+				
+			   	<input type="text" name="form__registration-code" class="form__registration-code"  placeholder="Ввести проверочный код" required>			    
+
+			    <input type="checkbox" id="form__registration-accept" name="form__registration-accept">
+				<label for="form__registration-accept">Я согласен с условиями пользовательского соглашения</label>
+
+				<button type="submit" id="form__registration-submit" class="form__registration-submit">Зарегистрироваться</button>			
+			</fieldset>
+		</form>
+		<a class="page__registration-close" onclick="hide_reg_form();"></a>
+	</div>
+</div>
+
+<div id="last__items-list">
+	<div class="last__items-list-wrap">
+		<p class="last__items-header">Избранные и последние просмотренные товары</p>
+
+		<div class="last__items-product">
+			<img src="img/img_12_mini.jpg" class="last__items-foto-mini" alt="Штампованный диск">
+
+			<div class="last__items-product-data">
+				<p class="last__items-product-name">Штампованный диск колеса 8,25х22,5</p>
+				<span>
+					<strong class="last__items-product-price">2800 руб.</strong>
+					<button type="button" class="last__items-tobasket">Положить в корзину</button>
+				</span>
+			</div>
+		</div>
+
+		<div class="last__items-product">
+			<img src="img/img_10_mini.jpg" class="last__items-foto-mini" alt="Shell Helix Ultra">
+
+			<div class="last__items-product-data">
+				<p class="last__items-product-name">Shell Helix Ultra 5W-30</p>
+				<span>
+					<strong class="last__items-product-price">1900 руб.</strong>
+					<button type="button" class="last__items-tobasket">Положить в корзину</button>
+				</span>
+			</div>
+		</div>
+
+		<div class="last__items-product">
+			<img src="img/img_11_mini.jpg" class="last__items-foto-mini" alt="Стойка передняя Kayaba Hyundai Tucson">
+
+			<div class="last__items-product-data">
+				<p class="last__items-product-name">Стойка передняя Kayaba Hyundai Tucson</p>
+				<span>
+					<strong class="last__items-product-price">5300 руб.</strong>
+					<button type="button" class="last__items-tobasket">Положить в корзину</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="shopping__cart-wrapper">
+	<div class="basket__wrapper"></div>
+	
+</div>
+
+</div>	
+</body>
+</html>

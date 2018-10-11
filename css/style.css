@@ -1734,6 +1734,25 @@ a:hover {
 	z-index: -1;
 }
 /*===Корзина с заказом==============================================================*/
+#shopping__cart-wrapper {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/background.png) no-repeat;
+    background-size: cover;
+    z-index: 400;
+}
+.basket__wrapper {
+	display: flex;
+	margin: 0 auto;
+	width: 100px;
+	height: 0;
+	border-top: 100px solid #303030;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+
 /*===Проверка заказа================================================================*/
 .order__result {
 	display: flex;
