@@ -69,3 +69,8 @@ function check_all(checktoggle) {
         }
   }
 }
+
+// Скрыть заказ
+function close_order() {    
+    document.getElementById('shopping__cart-wrapper').style.display = 'none';
+}
