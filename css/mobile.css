@@ -58,6 +58,8 @@
 
 .search__pagination-form select { width: 93%; }
 
+.product__price-basket > span { top: 7%; }
+
 .order__table_header-name:nth-child(2) { width: 13%; }
 
 .order__processed-wrapper { margin: 4% 1% 0 1% }
@@ -120,6 +122,8 @@
 .search__pagination-wrapper { margin: 2% 1.3% 0 0; }
 .search__pagination-menu { margin: 0 0 0 27%; }
 .search__pagination-form select { width: 98%; }
+
+.basket__wrapper { margin: 3% 20%; }
 
 .order__table_header-name { font-size: 22px; }
 .order__table { font-size: 22px; }
@@ -209,6 +213,8 @@
 .search__pagination-menu {  margin: 0 0 0 23%; }
 .search__pagination-form select { width: 100%; }
 
+.basket__wrapper { margin: 3% 17%; }
+
 .order__result-header { margin: 40px 0 0 0; }
 .order__result-header p { font-size: 40px; line-height: 16px; }
 .order__result-header-img { width: 190px; height: 190px; }
@@ -257,6 +263,7 @@
 .search__table-fin td { font-size: 22px; }
 .search__pagination-wrapper { margin: 2% 1% 0 0; }
 
+.basket__wrapper { margin: 3% 15%; }
 }
 
 @media only screen  and (max-width : 1399px) {
@@ -353,6 +360,8 @@
 #pagination__select option { font-size: 16px; }
 .pagination__select-cust:before { right: 31px; }
 .pagination__select-cust:after { width: 20px; height: 15px; right: 8px; top: 7px; }
+
+.basket__wrapper { margin: 3% 10%; }
 
 .search__result-wrapper-fin p { font-size: 32px; }
 .search__table_header-name-fin { font-size: 20px; }
@@ -497,6 +506,29 @@
 .search__pagination-form p { font-size: 16px !important; }
 .search__pagination-form select { padding: 8px 40px 9px 10px; font-size: 16px; }
 
+.basket__wrapper { 
+	position: fixed; 
+	display: flex; 
+	flex-direction: column; margin: 11% 3%; } 
+.basket__wrapper-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    background-color: #FFFFFF; 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 1% 1%;
+    width: 100%; 
+}
+.basket__wrapper-header { margin: 5% auto; padding: 10px 0; width: 100%; }
+.prod__description { justify-content: center; margin:  0; }
+.prod__description-bottom { margin: 0; width: 100%; }
+.product__comment { margin: 0; width: 55%; }
+.basket__commit { border-radius: 12px; bottom: 1%; right: 3%; width: 150px; height: 85px; }
+.basket__close { top: 15px; right: 55px; font-size: 24px; }
+.basket__img-close { width: 20px; height: 20px; top: 3px; right: -30px; }
+.basket__img { display: none; }
+
 .order__result-header-img { width: 140px; height: 140px; top: -35px; left: 160px; }
 .order__result-header p { font-size: 24px; }
 .order__table { margin: 45px 1% 5px 1%; }
@@ -634,6 +666,8 @@
 .search__pagination-form p { padding: 4px 10px; font-size: 14px !important; }
 .search__pagination-form select { font-size: 14px; padding: 9px 40px 8px 10px; }
 
+.basket__close { right: 42px; }
+
 .order__table_header-name { font-size: 14px; }
 .order__table { font-size: 14px; line-height: 16px; }
 
@@ -747,6 +781,9 @@
 .search__pagination-form p { padding: 0px 5px; font-size: 12px !important; }
 .search__pagination-form select { font-size: 12px; padding: 6px 35px 6px 10px; }
 .search__pagination-select-cust:after { right: -5%; top: 0; width: 30px; height: 25px; }
+
+.basket__close { top: 10px; right: 40px; }
+.product__comment { margin: 0 75px 0 0; }
 
 .order__result-header-img { width: 130px; height: 130px; top: -35px; left: 140px; }
 .order__table_header-name { font-size: 12px; }
@@ -954,6 +991,18 @@ td:nth-of-type(9):before { content: "Корзина"; }
 	margin: 1% 0;
 }
 
+.basket__wrapper{ position: relative; }
+.basket__wrapper-header { font-size: 20px; }
+.basket__close { font-size: 16px; top: 5px; right: 30px;}
+.basket__img-close { width: 15px; height: 15px; top: 5px; right: -20px; }
+.product__comment { margin: 0 140px 0 0; }
+.basket__commit { 
+	position: relative; 
+	bottom: 86px;
+    right: 0;
+    left: 430px;
+    width: 150px;
+    height: 79px; }
 .order__result-header { margin: 30px 5px 0 0; }
 .order__result-header p { font-size: 20px; }
 .order__result-header-img { width: 105px; height: 105px; top: -25px; left: 110px; }
@@ -1081,6 +1130,25 @@ td:before { font-size: 14px; }
 
 .pagination__menu { width: 43%; }
 
+.basket__wrapper-inner { padding: 1% 1% 20% 1%; }
+.basket__close { font-size: 14px; top: 0px; right: 22px; }
+.basket__img-close { width: 10px; height: 10px; top: 8px; right: -13px; } 
+.basket__wrapper-header { font-size: 16px; }
+.prod__description-images { margin: 0; }
+.product__price { flex-direction: column; align-items: center; }
+.product__price-once, 
+.product__price-count, 
+.product__price-total {
+    width: 100%; }
+.product__comment { margin: 0; width: 100%; }
+.basket__commit { 
+	position: relative; 
+	margin: -85px 0 0 160px; 
+	bottom: 0; 
+	right: 0; 
+	left: 0; 
+}
+
 .search__result-fin { flex-basis: 76%; }
 .search__result-wrapper-fin p { padding: 2% 0; font-size: 14px;  }
 .search__table-fin td:before { font-size: 14px; }
@@ -1138,6 +1206,7 @@ td { text-align: left; padding-left: 35%; }
 .order__table td:nth-child(8) {
     padding-left: 35%; 
 }
+.basket__commit { margin: -85px 0 0 200px; }
 }
 
 @media only screen  and (max-width : 479px) {
@@ -1218,6 +1287,8 @@ td:before { font-size: 12px; left: 3%; }
 .pagination__select-cust:before { right: 22px; }
 .pagination__select-cust:after { width: 14px; height: 12px; right: 6px; top: 4px; }
 
+.basket__wrapper-inner { padding: 1% 1% 23% 1%; } 
+.basket__commit { margin: -85px 0 0 125px; }
 .search__result-fin { flex-basis: 67%; }
 .search__result-wrapper-fin p { padding: 2% 1%; }
 .search__table-fin td:before { font-size: 12px; left: 3%; }
@@ -1296,6 +1367,16 @@ td { text-align: left; padding-left: 95px; }
 td:before { left: 2%; }
 
 .pagination__menu { width: 58%; }
+
+.basket__wrapper-inner { padding: 1% 1% 20% 1%; }
+.basket__close { top: -2px; right: 20px; }
+.basket__commit { 
+	font-size: 16px;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    margin: -60px 0 0 125px; 
+}
 
 .search__result-fin { flex-basis: 64%; }
 .search__result-wrapper-fin p { margin: 1.5% 0 0 0; }
@@ -1451,6 +1532,9 @@ td:before { left: 3%; }
 td:before { font-size: 14px; }
 
 .pagination__menu { width: 47%; }
+
+.basket__wrapper-header { margin: 6% auto; }
+.basket__commit { margin: -55px 0 0 100px; }
 
 .search__result-wrapper-fin p { margin: 1% 3% 0 1%; }
 .search__table-fin { width: 97%; margin: 5px 0px; }
