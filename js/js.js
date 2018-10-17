@@ -16,24 +16,54 @@ window.onscroll=on_scroll
 var open_window = 0;
 function show_last_items(el) {
 
+    // получим top, bottom. left, right координаты
+    // кнопки на которую нажимаем
     var coords = el.getBoundingClientRect();
-    //console.log(coords);
 
     var last_item_block = document.getElementById('last__items-list');
-    //console.log(last_item_block);
-
     last_item_block.style.display = 'flex';
 
-    last_item_block.style.left = coords.left - 19 +'px';
-    last_item_block.style.top = coords.top + 65 + 'px';
+    if (window.innerWidth = 1920) {
+        last_item_block.style.top = coords.top + 65 + 'px';
+        last_item_block.style.left = coords.left - 19 +'px';          
+    }
+
+    if (window.innerWidth = 1768) {
+        last_item_block.style.top = coords.top + 65 + 'px';
+        last_item_block.style.left = coords.left - 20 +'px';          
+    }
+
+    if (window.innerWidth = 1680) {
+        last_item_block.style.top = coords.top + 65 + 'px';
+        last_item_block.style.left = coords.left - 21 +'px';          
+    }
+
+    if (window.innerWidth = 1600) {
+        last_item_block.style.top = coords.top + 65 + 'px';
+        last_item_block.style.left = coords.left - 28 +'px';          
+    }
+
+    if (window.innerWidth = 1440) {
+        last_item_block.style.top = coords.top + 50 + 'px';
+        last_item_block.style.left = coords.left - 52 +'px';          
+    }
+
+    if (window.innerWidth = 1280) {
+        last_item_block.style.top = coords.top + 44 + 'px';
+        last_item_block.style.left = coords.left - 46 +'px';          
+    }
+
+    if (window.innerWidth = 1024) {
+        last_item_block.style.top = coords.top + 34 + 'px';
+        last_item_block.style.left = coords.left - 38 +'px';          
+    }
 
 
 
-
-    
 
     // если окно закрыто
     if (open_window == 0) {
+        
         // то покажем его при нажатии
         document.getElementById('last__items-list').onmousedown
         // установим "переключатель" в положение открытого окна
@@ -43,7 +73,9 @@ function show_last_items(el) {
     }
     // для всего body установим вызов функции по нажатию 
     // которая скроет всплывающее окно при нажатии в любом месте экрана
+    // а так же при прокрутке колеса мыши
     document.body.onclick=hide_last_items;
+    document.getElementById('wrapper').addEventListener('wheel', hide_last_items);
 }
 
 // функция скрывающая окно с последними просмотренными элементами

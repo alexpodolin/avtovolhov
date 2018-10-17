@@ -154,7 +154,7 @@ a:hover {
     right: 381px;*/
 	background-color: #303030;
 	border-radius: 20px;  
-	z-index: 200;
+	z-index: 110;
 }
 #last__items-list:before {
     content: "";
@@ -676,7 +676,7 @@ a:hover {
 	display: none;
 	box-sizing: border-box;
 	position: fixed;
-	z-index: 150;
+	z-index: 101;
 }
 .header__mini {
 	width: 100%;
@@ -807,8 +807,8 @@ a:hover {
     width: 65px;
     height: 51px;
     margin: 0.5% 0 0 2.5%;
-    z-index: 100;
     position: relative;
+    z-index: 111;
 }
 .last__items-mini:before {
     top: 27%;
