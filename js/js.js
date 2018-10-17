@@ -14,16 +14,32 @@ window.onscroll=on_scroll
 // показать последние просмотренные элементы
 // глоб.перем. = "переключатель", окно закрыто
 var open_window = 0;
-function show_last_items() {
+function show_last_items(el) {
+
+    var coords = el.getBoundingClientRect();
+    //console.log(coords);
+
+    var last_item_block = document.getElementById('last__items-list');
+    //console.log(last_item_block);
+
+    last_item_block.style.display = 'flex';
+
+    last_item_block.style.left = coords.left - 19 +'px';
+    last_item_block.style.top = coords.top + 65 + 'px';
+
+
+
+
+    
+
     // если окно закрыто
     if (open_window == 0) {
         // то покажем его при нажатии
-        document.getElementById('last__items-list').style.display = 'flex';
-
-            document.getElementById('last__items-list').onmousedown
-
+        document.getElementById('last__items-list').onmousedown
         // установим "переключатель" в положение открытого окна
-        setTimeout(function () { open_window = 1; }, 50);        
+        setTimeout(function () { 
+            open_window = 1; 
+        }, 50);        
     }
     // для всего body установим вызов функции по нажатию 
     // которая скроет всплывающее окно при нажатии в любом месте экрана

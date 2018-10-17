@@ -143,15 +143,15 @@ a:hover {
 } 
 .last__items:hover {
 	cursor: pointer;
-	/*opacity: 1;*/
 }
 #last__items-list {
 	display: none;
 	content: "";
-	position: absolute;
+/*	position: absolute;*/
+	position: fixed;
 	width: 19%;
-    top: 172px;
-    right: 381px;
+/*    top: 172px;
+    right: 381px;*/
 	background-color: #303030;
 	border-radius: 20px;  
 	z-index: 200;
@@ -676,7 +676,7 @@ a:hover {
 	display: none;
 	box-sizing: border-box;
 	position: fixed;
-	z-index: 999;
+	z-index: 150;
 }
 .header__mini {
 	width: 100%;
@@ -807,6 +807,8 @@ a:hover {
     width: 65px;
     height: 51px;
     margin: 0.5% 0 0 2.5%;
+    z-index: 100;
+    position: relative;
 }
 .last__items-mini:before {
     top: 27%;
