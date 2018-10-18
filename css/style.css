@@ -150,8 +150,8 @@ a:hover {
 /*	position: absolute;*/
 	position: fixed;
 	width: 19%;
-/*    top: 172px;
-    right: 381px;*/
+    top: 172px;
+    right: 381px;
 	background-color: #303030;
 	border-radius: 20px;  
 	z-index: 110;
@@ -167,14 +167,16 @@ a:hover {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.last__items-list-wrap {
+.last__items-list-wrap,
+.last__items-list-wrap-hm {
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	margin: 0;
 	padding: 0 2%;
 }
-.last__items-header {
+.last__items-header,
+.last__items-header-hm {
 	color: #ffffff;
 	font-size: 24px;
 	font-weight: lighter;
@@ -182,7 +184,8 @@ a:hover {
 	text-transform: uppercase;
 	margin: 3% 0;
 }
-.last__items-product {
+.last__items-product,
+.last__items-product-hm {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -191,20 +194,23 @@ a:hover {
 	border-radius: 15px;
 	margin: 0 0 3% 0;
 }
-.last__items-foto-mini {
+.last__items-foto-mini,
+.last__items-foto-mini-hm {
 	border: none;
 	border-radius: 15px;
 	margin: 1%;
 	max-height: fit-content;
 }
-.last__items-product-data {
+.last__items-product-data,
+.last__items-product-data-hm {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
     margin: 1% 1%;
 }
-.last__items-product-name {
+.last__items-product-name,
+.last__items-product-name-hm {
 	color: #000000;
     text-align: center;
     font-size: 16px;
@@ -212,7 +218,9 @@ a:hover {
     text-overflow: ellipsis; 
 }
 .last__items-product-price,
-.last__items-tobasket {
+.last__items-tobasket,
+.last__items-product-price-hm,
+.last__items-tobasket-hm  {
 	background-color: #C92F2F;
 	border: none;
 	border-radius: 15px;
@@ -222,8 +230,30 @@ a:hover {
 	font-style: italic;
 	padding: 3px 5px;
 }
-.last__items-tobasket:hover {
+.last__items-tobasket:hover,
+.last__items-tobasket-hm:hover {
 	cursor: pointer;
+}
+#last__items-list-hm {
+	display: none;
+	position: fixed;
+	width: 19%;
+    top: 80px;
+    right: 20px;
+	background-color: #303030;
+	border-radius: 20px;  
+	z-index: 110;
+}
+#last__items-list-hm:before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 70px;
+    background-color: #303030;
+    top: -67px;
+    left: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 /*==================================================================================*/
 .search__basket {
@@ -783,6 +813,7 @@ a:hover {
 }
 .header__main-mini {
 	width: 84%;
+	z-index: 50;
 }
 /*==================================================================================*/
 .form__wrapper-mini {
