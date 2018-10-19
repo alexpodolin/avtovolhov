@@ -56,7 +56,7 @@
 					<button type="submit" form="search" class="search__icon-search"></button>
 				</fieldset>
 			</form>
-			<button type="button" class="last__items" onclick="show_last_items();"></button>			
+			<button type="button" class="last__items" onclick="show_last_items(this);"></button>			
 
 			<a href="#" class="search__basket"></a>
 			<a class="search__login" onclick="show_login_form();"><span>Вход</span></a>
@@ -98,9 +98,52 @@
 					<button type="submit" form="search" class="search__icon-search search__icon-search-mini"></button>
 				</fieldset>
 			</form>
-			<button type="button" class="last__items last__items-mini" onclick="show_last_items();"></button>
+			<button type="button" class="last__items last__items-mini" onclick="show_last_items_hm(this);"></button>
 			<a href="#" class="search__basket search__basket-mini"></a>
 			<a class="search__logout" onclick="show_login_form();"><span>Вход</span></a>
+
+			<div id="last__items-list-hm">
+				<div class="last__items-list-wrap-hm">
+					<p class="last__items-header-hm">Избранные и последние просмотренные товары</p>
+
+					<div class="last__items-product">
+						<img src="img/img_12_mini.jpg" class="last__items-foto-mini-hm" alt="Штампованный диск">
+
+						<div class="last__items-product-data-hm">
+							<p class="last__items-product-name-hm">Штампованный диск колеса 8,25х22,5</p>
+							<span>
+								<strong class="last__items-product-price-hm">2800 руб.</strong>
+								<button type="button" class="last__items-tobasket-hm">Положить в корзину</button>
+							</span>
+						</div>
+					</div>
+
+					<div class="last__items-product-hm">
+						<img src="img/img_10_mini.jpg" class="last__items-foto-mini-hm" alt="Shell Helix Ultra">
+
+						<div class="last__items-product-data-hm">
+							<p class="last__items-product-name-hm">Shell Helix Ultra 5W-30</p>
+							<span>
+								<strong class="last__items-product-price-hm">1900 руб.</strong>
+								<button type="button" class="last__items-tobasket-hm">Положить в корзину</button>
+							</span>
+						</div>
+					</div>
+
+					<div class="last__items-product-hm">
+						<img src="img/img_11_mini.jpg" class="last__items-foto-mini-hm" alt="Стойка передняя Kayaba Hyundai Tucson">
+
+						<div class="last__items-product-data-hm">
+							<p class="last__items-product-name-hm">Стойка передняя Kayaba Hyundai Tucson</p>
+							<span>
+								<strong class="last__items-product-price-hm">5300 руб.</strong>
+								<button type="button" class="last__items-tobasket-hm">Положить в корзину</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </div>
@@ -196,7 +239,7 @@
 
 					<form id="issue__form">
 						<fieldset>
-							<legend>
+							<legend></legend>
 								<label for="issue__select" class="issue__select">
 									<select id="issue__select">
 										<option>Выберите пункт выдачи</option>
@@ -205,15 +248,15 @@
 										<option value="деревня">деревня</option>
 									</select>
 								</label>
-								<p >Внимание! Условия поставки и оплаты:</p>
+								<p>Внимание! Условия поставки и оплаты:</p>
 								<textarea readonly>Цена действительна только...
 								</textarea>							
 								
 								<input type="checkbox" id="issue-chkbox">
 								<label for="issue-chkbox">Я согласен с условиями поставки и оплаты</label>
 								
-								<button type="submit" form="issue-form">Оформить заказ</button>	
-							</legend>
+								<button type="submit" form="issue__form">Оформить заказ</button>	
+							
 						</fieldset>
 					</form>
 				</div>	

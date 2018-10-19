@@ -23,7 +23,7 @@
 .header__mini-nav { width: 310%; left: -176%; }
 .search__logout:before { top: 0%; right: 32%; }
 
-#last__items-list { width: 21%; top: 12%; right: 18%; }
+#last__items-list { width: 21%; top: 29%; right: 18%; }
 #last__items-list:before { left: 18.5px; }
 #last__items-list-hm:before { left: 13px; }
 }
@@ -210,7 +210,7 @@
 .search__logout span { font-size: 20px; left: 32%; }
 
 #last__items-list { width: 26%; top: 130px; right: 214px;; }
-#last__items-list:before { top: -51px; left: 48px; width: 40px; }
+#last__items-list:before { top: -51px; left: 51px; width: 40px; }
 #last__items-list-hm:before {  top: -70px; left: 86px; width: 44px;}
 
 .search__table_header-name-fin { font-size: 23px; }
@@ -1121,8 +1121,8 @@ td { text-align: left; padding-left: 31%; }
 .header__mini-link { font-size: 12px; }
 .form__wrapper-mini	{ margin: 0 0%; } 
 .search__icon-search-mini { left: 89%; height: 23px; }
-.last__items-mini { width: 35px; height: 25px; }
-.last__items-mini:before { top: 24%; left: 10%; }
+.last__items-mini { width: 35px; height: 25px; border-radius: 8px; }
+.last__items-mini:before { top: 24%; left: 9%; }
 .search__basket-mini { width: 59px; height: 40px; margin: 0% 0 0 1%; }
 .search__logout { width: 32%; height: 23px;  }
 .search__logout:before { top: -3%; left: -30%; width: 25px; height: 26px; }
@@ -1217,7 +1217,7 @@ td { text-align: left; padding-left: 35%; }
 }
 
 @media only screen  and (width : 600px) { 
-.search__icon-search { top: 7%; left: 93%; width: 30px; height: 30px; }
+.search__icon-search { top: 4%; left: 93%; width: 30px; height: 32px; }
 .search__icon-search-mini { top: 5%; left: 92%; width: 22px; height: 25px; }
 #last__items-list { top: 123px; right: 102px; }
 #last__items-list:before { top: -35px; right: 52px; width: 36px; }
@@ -1240,7 +1240,7 @@ td { text-align: left; padding-left: 35%; }
 .header { height: 170px; }	
 .search__icon-search { left: 91%; height: 24px; }
 .search input { padding: 3% 0 2.5% 2%; font-size: 12px; }
-.search__icon-search { left: 90%; height: 26px; }
+.search__icon-search { left: 90%; height: 27px; }
 .main__bottom_menu-wrap { flex-basis: 40%; }
 
 .header__mini-leftlogo { margin: 0 0 0 2%; width: 31%; }
@@ -1268,8 +1268,9 @@ td { text-align: left; padding-left: 35%; }
 .form__registration input[type="checkbox"] ~ label:before { left: -7%; }
 .form__registration input[type="checkbox"] ~ label:hover:before { left: -7%; }
 
-#last__items-list { width: 72%; top: 4%; right: 13%; }
+#last__items-list { width: 72%; top: 20.5%; right: 13%; }
 #last__items-list:before { top: -37px; left: auto; right: 77px; width: 33px; }
+#last__items-list-hm:before { left: 119px; width: 28px;}
 
 .personal__area-nav { flex-basis: 25%; }
 .personal__area-link {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
@@ -1368,16 +1369,22 @@ td { text-align: left; padding-left: 95px; }
 .search__icon-search-mini { left: 82%; height: 25px; }
 .last__items-mini { width: 41px; height: 28px; }
 .last__items-mini:before { top: 28%; left: 11%; width: 16px; height: 12px; }
+.search__icon-search-mini { left: 80%; height: 29px; }
+.last__items { height: 29px; margin: -1px 0 0 3%; }
+.last__items-mini { height: 29px; }
+.last__items-mini:before { top: 25%; left: 9%; width: 19px; height: 14px; }
 .search__basket-mini { width: 66px; height: 34px; }
-.search__logout { width: 47%; }
+.search__logout { width: 47%; margin: 1px 0 0 3%; }
 
 .login__wrapper { margin: 23% 0 0 0%; }
 .login__wrapper-top { font-size: 16px; }
 .form__login input[type="checkbox"] ~ label:before { left: 16%; }
 .form__login input[type="checkbox"] ~ label:hover:before { left: 16%; }
 
-#last__items-list { width: 80%; top: 116px; right: 43px; }
-#last__items-list:before { top: -34px; right: 88px; width: 32px; }
+#last__items-list { width: 80%; top: 115px; right: 44px; }
+#last__items-list:before { top: -34px; right: 82px; width: 32px; }
+#last__items-list-hm { width: 80%; }
+#last__items-list-hm:before { width: 29px; top: -41px; left: 158px; }
 
 .personal__cabinet-img { height: 130px; }
 .personal__cabinet-name { font-size: 20px; }
@@ -1445,9 +1452,13 @@ td { text-align: left; padding-left: 115px; }
 .order__processed-text span { margin: 1% 0; }
 }
 
-@media only screen  and (width : 414px) { 
+@media only screen  and (width : 414px) { 	
+	.last__items { height: 28px; margin: -2px 0 0 3%; }
+	.last__items-mini { height: 29px; margin: -1px 0 0 3%;}
+	.last__items-mini:before { top: 29%; left: 10%; width: 19px; height: 12px; }
 	#last__items-list { right: 10%; }
 	#last__items-list:before { right: 91px; }
+	#last__items-list-hm:before { width: 27px; top: -41px; left: 172px; }
 }
 
 @media only screen  and (max-width : 376px) {	
@@ -1460,7 +1471,8 @@ td { text-align: left; padding-left: 115px; }
 
 .search__mini input { padding: 8.5% 0 8% 2%; font-size: 7px;}
 .search__icon-search-mini { top: 6%; left: 79%; height: 27px; }
-.last__items-mini:before { top: 30%; left: 13%; }
+.last__items:before { top: 25%; left: 14%; }
+.last__items-mini:before { top: 26%; left: 10%; }
 .search__logout span { left: 33%; font-size: 10px; }
 
 .login__wrapper-top { font-size: 14px; }
@@ -1473,6 +1485,7 @@ td { text-align: left; padding-left: 115px; }
 
 #last__items-list { width: 83%; top: 109px; right: 29px; }
 #last__items-list:before { width: 31px; top: -32px; right: 94px; }
+#last__items-list-hm:before { width: 26px; top: -41px; left: 152px; }
 
 .personal__cabinet-wrapper p {  font-size: 16px; }
 .personal__cabinet-name { font-size: 16px; }
@@ -1508,8 +1521,12 @@ td:before { left: 3%; }
 }
 
 @media only screen  and (width : 375px) { 
+	.search__icon-search-mini { height: 28px; }
+	.last__items:before { left: 13%; }
+	.last__items-mini:before { top: 27%; }
 	#last__items-list { top: 110px; right: 30px; }
 	#last__items-list:before { right: 96px; }
+	#last__items-list-hm:before { width: 28px; left: 157px; }
 }
 
 @media only screen  and (max-width : 359px) {	
@@ -1546,6 +1563,10 @@ td:before { left: 3%; }
 
 #last__items-list { width: 94%; top: 110px; right: 10px; }
 #last__items-list:before { top: -32px; right: 108px; width: 30px; }
+.last__items-mini:before { left: 9%; width: 19px; height: 11px; }
+#last__items-list-hm { width: 94%; }
+#last__items-list-hm:before { width: 25px; top: -38px; left: 177px; }
+
 
 .personal__area { display: flex; flex-direction: column; }
 .personal__area-link { padding: 1%; }
