@@ -954,6 +954,8 @@ tbody, th, td, tr {
 	flex-direction: column;
 }
 .search__table-fin { margin: 5px 5px; width: 97%; }
+.search__table-fin  tr:nth-child(odd):hover { background-color: #FFF7AE !important; }
+.search__table-fin  tr:nth-child(even):hover { background-color: transparent !important; }
 .search__table_header-fin tr {  position: absolute; top: -9999px;  left: -9999px; }
 .search__table-fin td { 
 	font-size: 16px; 
@@ -1042,14 +1044,18 @@ td:nth-of-type(9):before { content: "Корзина"; }
     flex-direction: column; 
 }
 .order__table_header tr { position: absolute; top: -9999px; left: -9999px; }
-td:nth-of-type(1):before { content: ""; }
-td:nth-of-type(2):before { content: "Производитель"; }
-td:nth-of-type(3):before { content: "Номер"; }
-td:nth-of-type(4):before { content: "Наименование"; }
-td:nth-of-type(5):before { content: "Количество"; }
-td:nth-of-type(6):before { content: "Цена"; }
-td:nth-of-type(7):before { content: "Дата поставки"; }
-td:nth-of-type(8):before { content: "Удалить"; }
+.order__table  tr:nth-child(odd):hover { background-color: #FFF7AE !important; }
+.order__table  tr:nth-child(even):hover { background-color: transparent !important; }
+.order__table td:nth-of-type(1) { display: none;}
+.order__table td:nth-of-type(1):before { content: ""; }
+.order__table td:nth-of-type(2):before { content: "Производитель"; }
+.order__tabl_header td:nth-of-type(3):before { content: "Номер"; }
+.order__table td:nth-of-type(4):before { content: "Наименование"; }
+.order__table td:nth-of-type(5):before { content: "Количество"; }
+.order__table td:nth-of-type(6):before { content: "Цена"; }
+.order__table td:nth-of-type(7):before { content: "Сумма"; }
+.order__table td:nth-of-type(8):before { content: "Дата поставки"; }
+.order__table td:nth-of-type(9):before { content: "Удалить"; }
 .checkbox__wrapper { justify-content: flex-start; padding: 5px 5px 5px 0; width: 15px; }
 td { text-align: left; padding-left: 31%; }
 .order__table td:nth-child(4),
